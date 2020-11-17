@@ -1,4 +1,4 @@
-# Leetcode Core 170
+# Leetcode Core 220
 ## Solutions of top 100 liked and top frequently asked interview questions.
 | # | Category      | # | Questions          |
 |---|---------------|---|--------------------|
