@@ -3,7 +3,7 @@
 | # | Category      | # | Questions          |
 |---|---------------|---|--------------------|
 | 1 | HashMap       | 1 | 1. Two Sum         |
-|   |               | 2 | 3. Longest Substring Withour Repeating Characters |
+|   |               | 2 | 3. Longest Substring Without Repeating Characters |
 |   |               | 3 | 13. Roman to Integer |
 |   |               | 4 | 49. Group Anagrams |
 |   |               | 5 | 138. Copy List with Random Pointer |
@@ -39,9 +39,10 @@
 |   |               | 2 | 33. Search in Rotated Sorted Array |
 |   |               | 3 | 34. Search for a Range |
 |   |               | 4 | 69. Sqrt(x) |
-|   |               | 5 | 162. Find Peak Element |
-|   |               | 6 | 287. Find the Duplicate Number |
-|   |               | 7 | 378. Kth Smallest Element in a Sorted Matrix |
+|   |               | 5 | 153. Minimum in Rotated Sorted Array |
+|   |               | 6 | 162. Find Peak Element |
+|   |               | 7 | 287. Find the Duplicate Number |
+|   |               | 8 | 378. Kth Smallest Element in a Sorted Matrix |
 | 4 | Backtracking  | 1 | 5. Longest Palindromic Substring |
 |   |               | 2 | 17. Letter Combinations of a Phone Number |
 |   |               | 3 | 39. Combination Sum |
@@ -63,8 +64,9 @@
 |   |               | 6 | 96. Unique Binary Search Trees |
 |   |               | 7 | 118. Pascal's Triangle |
 |   |               | 8 | 198. House Robber |
-| 7 | Two State DP  | 1 | 300. Longest Increasing Subsequence |
-|   |               | 2 | 322. Coin Change |
+| 7 | Two State DP  | 1 | 213. House Robber II |
+|   |               | 2 | 300. Longest Increasing Subsequence |
+|   |               | 3 | 322. Coin Change |
 | 8 | Two Stage DP  | 1 | 121. Best Time to Buy and Sell Stock |
 |   |               | 2 | 128. Longest Consecutive Sequence |
 |   |               | 3 | 134. Gas Station |
@@ -82,18 +84,20 @@
 | 14 | Substring              | 1 | 14. Longest Common Prefix |
 |   |                         | 2 | 28. Implement strStr() |
 |   |                         | 3 | 38. Count and Say |
+|   |                         | 4 | 271. Encode and Decode Strings |
 | 15 | Linked List            | 1 | 19. Remove Nth Node From End of List |
 |    |                        | 2 | 21. Merge Two Sorted Lists |
 |    |                        | 3 | 141. Linked List Cycle |
 |    |                        | 4 | 142. Linked List Cycle II |
-|    |                        | 5 | 148. Sort List |
-|    |                        | 6 | 160. Intersection of Two Linked Lists |
-|    |                        | 7 | 206. Reverse Linked List |
-|    |                        | 8 | 234. Palindrome Linked List |
-|    |                        | 9 | 237. Delete Node in a Linked List |
-|    |                        | 10 | 285. Inorder Successor in BST |
-|    |                        | 11 | 287. Find the Duplicate Number |
-|    |                        | 12 | 328. Odd Even Linked List |
+|    |                        | 5 | 143. Reorder List |
+|    |                        | 6 | 148. Sort List |
+|    |                        | 7 | 160. Intersection of Two Linked Lists |
+|    |                        | 8 | 206. Reverse Linked List |
+|    |                        | 9 | 234. Palindrome Linked List |
+|    |                        | 10 | 237. Delete Node in a Linked List |
+|    |                        | 11 | 285. Inorder Successor in BST |
+|    |                        | 12 | 287. Find the Duplicate Number |
+|    |                        | 13 | 328. Odd Even Linked List |
 | 16 | Double Linked List     | 1 | 146. LRU Cache |
 |    |                        | 2 | 460. LFU Cache |
 | 17 | Stack                  | 1 | 20. Valid Parentheses |
@@ -102,16 +106,17 @@
 |    |                        | 4 | 84. Largest Rectangle Histogram |
 |    |                        | 5 | 85. Maximal Rectangle |
 |    |                        | 6 | 94. Binary Tree Inorder Traversal |
-|    |                        | 7 | 104. Maximum Depth of Binary Tree |
-|    |                        | 8 | 114. Flatten Binary Tree to Linked List |
-|    |                        | 9 | 150. Evaluate Reverse Polish Notation |
-|    |                        | 10 | 155. Min Stack |
-|    |                        | 11 | 227. Basic Valculator II |
-|    |                        | 12 | 230. Kth Smallest Element in BST |
-|    |                        | 13 | 236. Lowest Common Ancestor of a Binary Tree |
-|    |                        | 14 | 341. Flatten Nested List Iterator |
-|    |                        | 15 | 394. Decode String |
-|    |                        | 16 | 739. Faily Temperatures |
+|    |                        | 7 | 100. Same Tree |
+|    |                        | 8 | 104. Maximum Depth of Binary Tree |
+|    |                        | 9 | 114. Flatten Binary Tree to Linked List |
+|    |                        | 10 | 150. Evaluate Reverse Polish Notation |
+|    |                        | 11 | 155. Min Stack |
+|    |                        | 12 | 227. Basic Valculator II |
+|    |                        | 13 | 230. Kth Smallest Element in BST |
+|    |                        | 14 | 236. Lowest Common Ancestor of a Binary Tree |
+|    |                        | 15 | 341. Flatten Nested List Iterator |
+|    |                        | 16 | 394. Decode String |
+|    |                        | 17 | 739. Faily Temperatures |
 | 18 | DFS                    | 1 | 22. Generate Parentheses |
 |    |                        | 2 | 94. Binary Tree Inorder Traversal |
 | 19 | Divide and Conquer DFS | 1 | 23 Merge k Sorted Lists |
@@ -130,14 +135,17 @@
 |    |                        | 14 | 617. Merge Two Binary Trees |
 | 20 | Divide and Conquer DFS with Memo | 1 | 337. House Robber III |
 |    |                        | 2 | 437. Path Sum III |
+|    |                        | 3 | 572. Subtree of Another Tree |
 | 21 | Matrix and Checked     | 1 | 36. Valid sudoku |
 |    |                        | 2 | 289. Game of Life |
 |    |                        | 3 | 348. Design Tic-Tac-Toe |
 | 22 | DFS and Checked        | 1 | 79. Word Search |
 |    |                        | 2 | 130. Surrounded Regions |
-|    |                        | 3 | 140. Word Break II |
-|    |                        | 4 | 200. Number of Islands |
-|    |                        | 5 | 329. Longest Increasing Path in a Matrix |
+|    |                        | 3 | 133. Clone Graph |
+|    |                        | 4 | 140. Word Break II |
+|    |                        | 5 | 200. Number of Islands |
+|    |                        | 6 | 329. Longest Increasing Path in a Matrix |
+|    |                        | 7 | 417. Pacific Atlantic Water Flow |
 | 23 | BFS and Checked        | 1 | 127. Word Ladder |
 |    |                        | 2 | 130. Surrounded Regions |
 | 24 | Swap                   | 1 | 41. First Missing Positive |
@@ -151,13 +159,17 @@
 | 27 | Kadane                 | 1 | 53. Maximum Subarray |
 |    |                        | 2 | 152. Maximum Product Subarray |
 | 28 | Interval               | 1 | 56. Merge Interval |
+|    |                        | 2 | 57. Insert Interval |
+|    |                        | 3 | 252. Meeting Rooms |
+|    |                        | 4 | 435. Non-overlapping Intervals |
 | 29 | Quick Select Partition | 1 | 75. Sort Colors |
 |    |                        | 2 | 215. Kth Largest Element in an Array |
 |    |                        | 3 | 324. Wiggle Sort II |
 | 30 | Sliding Window         | 1 | 76. Minimum Window Substring |
 |    |                        | 2 | 340. Longest Substring with At Most K Distinct Characters |
 |    |                        | 3 | 395. Longest Substring with At Least K Repeating Characters |
-|    |                        | 4 | 438. Find All anaframs in a String |
+|    |                        | 4 | 424. Longest Repeating Character Replacement |
+|    |                        | 5 | 438. Find All anaframs in a String |
 | 31 | Queue                  | 1 | 101. Symmetric Tree |
 |    |                        | 2 | 102. Binary Tree Level Order Traversal |
 |    |                        | 3 | 103. Binary Tree Zigzag Level Order Traversal |
@@ -168,6 +180,7 @@
 |    |                        | 4 | 334. Increasing Triplet Subsequence |
 | 33 | Union Find             | 1 | 130. Surrounded Regions |
 |    |                        | 2 | 200. Number of Islands |
+|    |                        | 3 | 261. Graph Balid Tree |
 | 34 | XOR                    | 1 | 136. Single Number |
 |    |                        | 2 | 268. Missing Number |
 | 35 | Point centered gcd     | 1 | 149. Max Points on a Line |
@@ -187,11 +200,13 @@
 |    |                        | 5 | 371. Sum of Two Integers |
 | 41 | Graph, DFS and Check cycle | 1 | 207. Course Schedule |
 |    |                            | 2 | 210. Course Schedule II |
+|    |                            | 3 | 323. Number of Connected Components in an Undirected Graph |
 | 42 | Graph, BFS and Topological Sort | 1 | 207. Course Schedule |
 |    |                                 | 2 | 210. Course Schedule II |
 |    |                                 | 3 | 269. Alien Dictionary |
 | 43 | Trie Tree              | 1 | 208. Implement Trie |
-|    |                        | 2 | 212. Word Search II |
+|    |                        | 2 | 211. Add and Search Word - Data structure design |
+|    |                        | 3 | 212. Word Search II |
 | 44 | Heap                   | 1 | 215. Kth Largest Element in an Array |
 |    |                        | 2 | 218. The Skyline Problem |
 |    |                        | 3 | 253. Meeting Rooms II |
