@@ -1,7 +1,7 @@
 # Leetcode Core 220
 ## Solutions of top 100 liked and top frequently asked interview questions.
 | # | Category      | # | Questions          |
-|---|---------------|---|--------------------|
+|:-:|:-------------:|:-:|--------------------|
 | 1 | HashMap       | 1 | 1. Two Sum         |
 |   |               | 2 | 3. Longest Substring Without Repeating Characters |
 |   |               | 3 | 13. Roman to Integer |
