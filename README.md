@@ -119,106 +119,106 @@
 |    |                        | 17 | 739. Faily Temperatures |
 | 18 | DFS                    | 1 | 22. Generate Parentheses |
 |    |                        | 2 | 94. Binary Tree Inorder Traversal |
-| 19 | Divide and Conquer DFS | 1 | 23 Merge k Sorted Lists |
-|    |                        | 2 | 98. Validate Binary Search Tree |
-|    |                        | 3 | 101. Symmetric Tree |
-|    |                        | 4 | 104. Maximum Depth of Binary Tree |
-|    |                        | 5 | 105. Construct Binary Tree from Preorder and Inorder Traversal |
-|    |                        | 6 | 108. Convert Sorted Array to Binary Search Tree |
-|    |                        | 7 | 124. Binary Tree Maximum Path Sum |
-|    |                        | 8 | 148. Sort List |
-|    |                        | 9 | 212. Word Search II |
-|    |                        | 10 | 230. Kth Smallest Element in BST |
-|    |                        | 11 | 236. Lowest Common Ancestor of a Binary Tree |
-|    |                        | 12 | 285. Inorder Successor in BST |
-|    |                        | 13 | 543. Diameter of Binary Tree |
-|    |                        | 14 | 617. Merge Two Binary Trees |
-| 20 | Divide and Conquer DFS with Memo | 1 | 337. House Robber III |
+|    |                        | 3 | 104. Maximum Depth of Binary Tree |
+| 19 | Postorder DFS          | 1 | 101. Symmetric Tree |
+|    |                        | 2 | 124. Binary Tree Maximum Path Sum |
+|    |                        | 3 | 236. Lowest Common Ancestor of a Binary Tree |
+|    |                        | 4 | 543. Diameter of Binary Tree |
+| 20 | Divide and Conquer DFS | 1 | 23 Merge k Sorted Lists |
+|    |                        | 2 | 98. Validate Binary Search Tree | 
+|    |                        | 3 | 105. Construct Binary Tree from Preorder and Inorder Traversal |
+|    |                        | 4 | 108. Convert Sorted Array to Binary Search Tree |
+|    |                        | 5 | 148. Sort List |
+|    |                        | 6 | 212. Word Search II |
+|    |                        | 7 | 230. Kth Smallest Element in BST |
+|    |                        | 8 | 285. Inorder Successor in BST |
+|    |                        | 9 | 617. Merge Two Binary Trees |
+| 21 | Divide and Conquer DFS with Memo | 1 | 337. House Robber III |
 |    |                        | 2 | 437. Path Sum III |
 |    |                        | 3 | 572. Subtree of Another Tree |
-| 21 | Matrix and Checked     | 1 | 36. Valid sudoku |
+| 22 | Matrix and Checked     | 1 | 36. Valid sudoku |
 |    |                        | 2 | 289. Game of Life |
 |    |                        | 3 | 348. Design Tic-Tac-Toe |
-| 22 | DFS and Checked        | 1 | 79. Word Search |
+| 23 | DFS and Checked        | 1 | 79. Word Search |
 |    |                        | 2 | 130. Surrounded Regions |
 |    |                        | 3 | 133. Clone Graph |
 |    |                        | 4 | 140. Word Break II |
 |    |                        | 5 | 200. Number of Islands |
 |    |                        | 6 | 329. Longest Increasing Path in a Matrix |
 |    |                        | 7 | 417. Pacific Atlantic Water Flow |
-| 23 | BFS and Checked        | 1 | 127. Word Ladder |
+| 24 | BFS and Checked        | 1 | 127. Word Ladder |
 |    |                        | 2 | 130. Surrounded Regions |
-| 24 | Swap                   | 1 | 41. First Missing Positive |
+| 25 | Swap                   | 1 | 41. First Missing Positive |
 |    |                        | 2 | 344. Reverse String |
 |    |                        | 3 | 380. Insert Delete GetRandom O(1) |
 |    |                        | 4 | 448. Find All Numbers Disappeared in an Array |
-| 25 | 3 Way Reverse          | 1 | 189. Rotate Array |
-| 26 | BFS                    | 1 | 45. Jump Game II |
+| 26 | 3 Way Reverse          | 1 | 189. Rotate Array |
+| 27 | BFS                    | 1 | 45. Jump Game II |
 |    |                        | 2 | 226. Invert Binary Tree |
 |    |                        | 3 | 297. Serialize and Deserialize Binary Tree |
-| 27 | Kadane                 | 1 | 53. Maximum Subarray |
+| 28 | Kadane                 | 1 | 53. Maximum Subarray |
 |    |                        | 2 | 152. Maximum Product Subarray |
-| 28 | Interval               | 1 | 56. Merge Interval |
+| 29 | Interval               | 1 | 56. Merge Interval |
 |    |                        | 2 | 57. Insert Interval |
 |    |                        | 3 | 252. Meeting Rooms |
 |    |                        | 4 | 435. Non-overlapping Intervals |
-| 29 | Quick Select Partition | 1 | 75. Sort Colors |
+| 30 | Quick Select Partition | 1 | 75. Sort Colors |
 |    |                        | 2 | 215. Kth Largest Element in an Array |
 |    |                        | 3 | 324. Wiggle Sort II |
-| 30 | Sliding Window         | 1 | 76. Minimum Window Substring |
+| 31 | Sliding Window         | 1 | 76. Minimum Window Substring |
 |    |                        | 2 | 340. Longest Substring with At Most K Distinct Characters |
 |    |                        | 3 | 395. Longest Substring with At Least K Repeating Characters |
 |    |                        | 4 | 424. Longest Repeating Character Replacement |
 |    |                        | 5 | 438. Find All anaframs in a String |
-| 31 | Queue                  | 1 | 101. Symmetric Tree |
+| 32 | Queue                  | 1 | 101. Symmetric Tree |
 |    |                        | 2 | 102. Binary Tree Level Order Traversal |
 |    |                        | 3 | 103. Binary Tree Zigzag Level Order Traversal |
 |    |                        | 4 | 116. Populating Next Right Pointers in Each Node |
-| 32 | Greedy                 | 1 | 122. Best Time to Buy and Sell Stock II |
+| 33 | Greedy                 | 1 | 122. Best Time to Buy and Sell Stock II |
 |    |                        | 2 | 300. Longest Increasing Subsequence |
 |    |                        | 3 | 326. Power of Three |
 |    |                        | 4 | 334. Increasing Triplet Subsequence |
-| 33 | Union Find             | 1 | 130. Surrounded Regions |
+| 34 | Union Find             | 1 | 130. Surrounded Regions |
 |    |                        | 2 | 200. Number of Islands |
 |    |                        | 3 | 261. Graph Balid Tree |
-| 34 | XOR                    | 1 | 136. Single Number |
+| 35 | XOR                    | 1 | 136. Single Number |
 |    |                        | 2 | 268. Missing Number |
-| 35 | Point centered gcd     | 1 | 149. Max Points on a Line |
-| 36 | Moore's Voting algorithm | 1 | 169. Majority Element |
-| 37 | ASCII                  | 1 | 171. Excel Sheet Column Number |
+| 36 | Point centered gcd     | 1 | 149. Max Points on a Line |
+| 37 | Moore's Voting algorithm | 1 | 169. Majority Element |
+| 38 | ASCII                  | 1 | 171. Excel Sheet Column Number |
 |    |                        | 2 | 621. Task Scheduler |
-| 38 | Recursion              | 1 | 172. Factorial Trailing Zeros |
-| 39 | Sorting Variation      | 1 | 179. Largest Number |
+| 39 | Recursion              | 1 | 172. Factorial Trailing Zeros |
+| 40 | Sorting Variation      | 1 | 179. Largest Number |
 |    |                        | 2 | 218. The Skyline Problem |
 |    |                        | 3 | 324. Wiggle Sort II |
 |    |                        | 4 | 347. Top K Frequent Elements |
 |    |                        | 5 | 406. Queue Reconstruction by Height |
-| 40 | Bit Manipulation       | 1 | 190. Reverse Bits |
+| 41 | Bit Manipulation       | 1 | 190. Reverse Bits |
 |    |                        | 2 | 191. Number of 1 Bits |
 |    |                        | 3 | 289. Game of Life |
 |    |                        | 4 | 338. Counting Bits |
 |    |                        | 5 | 371. Sum of Two Integers |
-| 41 | Graph, DFS and Check cycle | 1 | 207. Course Schedule |
+| 42 | Graph, DFS and Check cycle | 1 | 207. Course Schedule |
 |    |                            | 2 | 210. Course Schedule II |
 |    |                            | 3 | 323. Number of Connected Components in an Undirected Graph |
-| 42 | Graph, BFS and Topological Sort | 1 | 207. Course Schedule |
+| 43 | Graph, BFS and Topological Sort | 1 | 207. Course Schedule |
 |    |                                 | 2 | 210. Course Schedule II |
 |    |                                 | 3 | 269. Alien Dictionary |
-| 43 | Trie Tree              | 1 | 208. Implement Trie |
+| 44 | Trie Tree              | 1 | 208. Implement Trie |
 |    |                        | 2 | 211. Add and Search Word - Data structure design |
 |    |                        | 3 | 212. Word Search II |
-| 44 | Heap                   | 1 | 215. Kth Largest Element in an Array |
+| 45 | Heap                   | 1 | 215. Kth Largest Element in an Array |
 |    |                        | 2 | 218. The Skyline Problem |
 |    |                        | 3 | 253. Meeting Rooms II |
 |    |                        | 4 | 295. find Median from Data Stream |
-| 45 | Shuffle                | 1 | 215. Kth Largest Element in an Array |
+| 46 | Shuffle                | 1 | 215. Kth Largest Element in an Array |
 |    |                        | 2 | 324. Wiggle Sort II |
 |    |                        | 3 | 384. Shuffle an Array |
-| 46 | Deque                  | 1 | 239. Sliding Window Maximum |
-| 47 | Prefix Sum             | 1 | 308. Range Sum Query 2D - Mutable |
+| 47 | Deque                  | 1 | 239. Sliding Window Maximum |
+| 48 | Prefix Sum             | 1 | 308. Range Sum Query 2D - Mutable |
 |    |                        | 2 | 560. Subarray Sum Equals K |
-| 48 | Merge Sort             | 1 | 315. Count of Smaller Numbers After Self |
-| 49 | Binary Search Tree     | 1 | 295. find Median from Data Stream |
+| 49 | Merge Sort             | 1 | 315. Count of Smaller Numbers After Self |
+| 50 | Binary Search Tree     | 1 | 295. find Median from Data Stream |
 |    |                        | 2 | 315. Count of Smaller Numbers After Self |
-| 50 | Binary Indexed Tree    | 1 | 315. Count of Smaller Numbers After Self |
-| 51 | Negative Mark          | 1 | 448. Find All Numbers Disappeared in an Array |
+| 51 | Binary Indexed Tree    | 1 | 315. Count of Smaller Numbers After Self |
+| 52 | Negative Mark          | 1 | 448. Find All Numbers Disappeared in an Array |
