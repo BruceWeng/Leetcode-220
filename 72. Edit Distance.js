@@ -91,6 +91,56 @@ const edist = (word1, word2) => {
     edist(word1, word2.slice(0, n) + 1) // Insert
   );
 }
+/**
+ * 2020/12/13 Memoization
+ * Base case:
+ * 1. word1 = '', word2 = '' ->  i === word1.length && j === word2.length, return 0
+ * 2. word1 = 'xyz', word2 = '' -> j === word2.length, return word1.length - i
+ * 3. word2 = '', word2 = 'xyz' -> i === word1.length, return word2.length - j
+ * 
+ * Recursive case: 
+ * 1. word1 = 'aX', word2 = 'aY' -> i += 1, j += 1, dist += 0
+ * 2. word1 = 'aX', word2 = 'Y' -> i += 1, j, dist += 1 (delete)
+ * 3. word1 = 'X', word2 = 'aY' -> i, j += 1, dist += 1 (insert)
+ * 4. word1 = 'aX', word2 = 'bY' -> i += 1, j += 1, dist += 1 (update)
+ * 
+ * T: O(m*n)
+ * S: O(min(m, n))
+ * @param {string} word1
+ * @param {string} word2
+ * @return {number}
+ */
+function minDistance(word1, word2, i=0, j=0, memo={}) {
+  let key = i + ',' + j;
+  if (key in memo) return memo[key];
+
+  let m = word1.length, n = word2.length;
+  if (i === m && j === n) {
+    memo[key] = 0;
+    return memo[key];
+  }
+  if (j === n) {
+    memo[key] = m - i;
+    return memo[key];
+  }
+  if (i === m) {
+    memo[key] = n - j;
+    return memo[key];
+  }
+  if (word1[i] === word2[j]) {
+    memo[key] = minDistance(word1, word2, i + 1, j + 1, memo);
+    return memo[key];
+  }
+
+  const delete_cost = minDistance(word1, word2, i, j + 1, memo) + 1;
+  const insert_cost = minDistance(word1, word2, i + 1, j, memo) + 1;
+  const update_cost = minDistance(word1, word2, i + 1, j + 1, memo) + 1;
+  memo[key] = Math.min(delete_cost, insert_cost, update_cost);
+  return memo[key];
+}
+
+console.log(minDistance('horse', 'ros')); // 3
+console.log(minDistance('intention', 'execution')); // 5
 
 /**
  * DP Solution 12/12
