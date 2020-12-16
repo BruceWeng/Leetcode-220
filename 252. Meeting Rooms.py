@@ -26,7 +26,7 @@ class Interval:
         self.end = e
 def canAttendMeetings(intervals):
     # list.sort() sort intervals in-place
-    intervals.sort(key=lambda x: x.start)
+    intervals.sort(key=lambda x: x.start) # can problem, doesn't matter sort by start or end time
 
     for i in range(1, len(intervals)):
         # allow duplicate time, use less rather than less and equal

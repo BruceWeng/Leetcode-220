@@ -28,7 +28,7 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 var merge = function (intervals) {
   if (intervals === undefined || intervals.length === 0) return [];
   let result = [];
-  intervals.sort((a, b) => a[0] - b[0]);
+  intervals.sort((a, b) => a[0] - b[0]); // merge problem, global minimum start time matter, need to sort by start time.
   let prevInterval = intervals[0];
   for (let i = 1; i < intervals.length; i++) {
     if (prevInterval[1] >= intervals[i][0]) {

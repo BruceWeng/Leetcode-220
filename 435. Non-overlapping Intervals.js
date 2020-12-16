@@ -5,7 +5,7 @@
 var eraseOverlapIntervals = function(intervals) {
   if (intervals.length === 0) return 0;
   intervals.sort((a, b) => a[1] - b[1]); // sorted by end
-
+  // maximum seperate problem, need to sort by end time.
   let count = 0;
   let prev_end = intervals[0][1];
   for (let i = 1; i < intervals.length; i++) {

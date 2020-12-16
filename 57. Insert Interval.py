@@ -50,7 +50,7 @@ S: O(n)
 @param {Interval} newInterval
 @param {Interval[]}
 """
-def insert(intervals, newInterval):
+def insert(intervals, newInterval): # merge problem, global minimum start time matter, need to sort by start time.
     result = []
     index = 0
     # 1.
