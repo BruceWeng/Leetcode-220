@@ -42,3 +42,7 @@ def threeSum(nums):
                 while left < right < len(nums)-1 and nums[right] == nums[right+1]:
                     right -= 1
     return result
+
+"""
+Solution 2: Reuse two-sum.js
+"""
