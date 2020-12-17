@@ -44,62 +44,62 @@
 |   |               | 7 | 287. Find the Duplicate Number                    | &check; | &check; |
 |   |               | 8 | 378. Kth Smallest Element in a Sorted Matrix      |         | &check; |
 | 4 | Backtracking  | 1 | 5. Longest Palindromic Substring                  | &check; |         |
-|   |               | 2 | 17. Letter Combinations of a Phone Number         |   |   |
-|   |               | 3 | 39. Combination Sum                               |   |   |
-|   |               | 4 | 46. Permutations                                  |   |   |
-|   |               | 5 | 78. Subsets                                       |   |   |
-|   |               | 6 | 131. Palindrome Partitioning                      |   |   |
-| 5 | Math Division | 1 | 7. Reverse Integer                                |   | &check; |
-|   |               | 2 | 8. String to Integer (atoi)                       |   |   |
-|   |               | 3 | 29. Divide Two Integers                           |   |   |
-|   |               | 4 | 50. Pow(x, n)                                     |   |   |
-|   |               | 5 | 166. Fraction to Recurring Decimal                |   |   |
-|   |               | 6 | 202. Happy Number                                 |   |   |
-|   |               | 7 | 204. Count Primes                                 |   |   |
-| 6 | DP            | 1 | 55. Jump Game                                     |   |   |
-|   |               | 2 | 62. Unique Paths                                  |   |   |
-|   |               | 3 | 64. Minimum Path Sum                              |   |   |
-|   |               | 4 | 70. Climbing Stairs                               |   |   |
-|   |               | 5 | 91. Decode Ways                                   |   |   |
-|   |               | 6 | 96. Unique Binary Search Trees                    |   |   |
-|   |               | 7 | 118. Pascal's Triangle                            |   |   |
-|   |               | 8 | 198. House Robber                                 |   |   |
-| 7 | Two State DP  | 1 | 213. House Robber II                              |   |   |
-|   |               | 2 | 300. Longest Increasing Subsequence               |   |   |
-|   |               | 3 | 322. Coin Change                                  |   |   |
-| 8 | Two Stage DP  | 1 | 121. Best Time to Buy and Sell Stock              |   |   |
-|   |               | 2 | 128. Longest Consecutive Sequence                 |   |   |
-|   |               | 3 | 134. Gas Station                                  |   |   |
-|   |               | 4 | 221. Maximal Square                               |   |   |
-|   |               | 5 | 279. Perfect Squares                              |   |   |
-| 9 | FSM DP        | 1 | 309. Best Time to Buy and Sell Stock with Cooldown|   |   |
-| 10 | Two String Matching DP | 1 | 10 Regular Expression Matching          |   |   |
-|   |                         | 2 | 44. Wildcard Matching                   |   |   |
-|   |                         | 3 | 72. Edit Distance                       |   |   |
-| 11 | Two Direction DP       | 1 | 11. Container With Most Water           |   |   |
-|   |                         | 2 | 238. Product of Array Except Self       |   |   |
-| 12 | 0/1 Knapsack DP        | 1 | 416. Partition Equal Subset Sum         |   |   |
-|    |                        | 2 | 494. Target Sum                         |   |   |
-| 13 | Substring DP           | 1 | 139. Word Break                         |   |   |
-| 14 | Substring              | 1 | 14. Longest Common Prefix               |   |   |
-|   |                         | 2 | 28. Implement strStr()                  |   |   |
-|   |                         | 3 | 38. Count and Say                       |   |   |
-|   |                         | 4 | 271. Encode and Decode Strings          |   |   |
-| 15 | Linked List            | 1 | 19. Remove Nth Node From End of List    |   |   |
-|    |                        | 2 | 21. Merge Two Sorted Lists              |   |   |
-|    |                        | 3 | 141. Linked List Cycle                  |   |   |
-|    |                        | 4 | 142. Linked List Cycle II               |   |   |
-|    |                        | 5 | 143. Reorder List                       |   |   |
-|    |                        | 6 | 148. Sort List                          |   |   |
-|    |                        | 7 | 160. Intersection of Two Linked Lists   |   |   |
-|    |                        | 8 | 206. Reverse Linked List                |   |   |
-|    |                        | 9 | 234. Palindrome Linked List             |   |   |
-|    |                        | 10 | 237. Delete Node in a Linked List      |   |   |
-|    |                        | 11 | 285. Inorder Successor in BST          |   |   |
-|    |                        | 12 | 287. Find the Duplicate Number         |   |   |
-|    |                        | 13 | 328. Odd Even Linked List              |   |   |
-| 16 | Double Linked List     | 1 | 146. LRU Cache                          |   |   |
-|    |                        | 2 | 460. LFU Cache                          |   |   |
+|   |               | 2 | 17. Letter Combinations of a Phone Number         | &check; |         |
+|   |               | 3 | 39. Combination Sum                               | &check; |         |
+|   |               | 4 | 46. Permutations                                  | &check; |         |
+|   |               | 5 | 78. Subsets                                       | &check; |         |
+|   |               | 6 | 131. Palindrome Partitioning                      | &check; |         |
+| 5 | Math Division | 1 | 7. Reverse Integer                                |         | &check; |
+|   |               | 2 | 8. String to Integer (atoi)                       |         | &check; |
+|   |               | 3 | 29. Divide Two Integers                           | &check; | &check; |
+|   |               | 4 | 50. Pow(x, n)                                     | &check; |         |
+|   |               | 5 | 166. Fraction to Recurring Decimal                | &check; | &check; |
+|   |               | 6 | 202. Happy Number                                 | &check; |         |
+|   |               | 7 | 204. Count Primes                                 |         | &check; |
+| 6 | DP            | 1 | 55. Jump Game                                     | &check; | &check; |
+|   |               | 2 | 62. Unique Paths                                  | &check; | &check; |
+|   |               | 3 | 64. Minimum Path Sum                              | &check; | &check; |
+|   |               | 4 | 70. Climbing Stairs                               | &check; | &check; |
+|   |               | 5 | 91. Decode Ways                                   | &check; | &check; |
+|   |               | 6 | 96. Unique Binary Search Trees                    | &check; | &check; |
+|   |               | 7 | 118. Pascal's Triangle                            | &check; | &check; |
+|   |               | 8 | 198. House Robber                                 | &check; | &check; |
+| 7 | Two State DP  | 1 | 213. House Robber II                              | &check; | &check; |
+|   |               | 2 | 300. Longest Increasing Subsequence               | &check; | &check; |
+|   |               | 3 | 322. Coin Change                                  | &check; | &check; |
+| 8 | Two Stage DP  | 1 | 121. Best Time to Buy and Sell Stock              | &check; | &check; |
+|   |               | 2 | 128. Longest Consecutive Sequence                 | &check; | &check; |
+|   |               | 3 | 134. Gas Station                                  | &check; | &check; |
+|   |               | 4 | 221. Maximal Square                               | &check; | &check; |
+|   |               | 5 | 279. Perfect Squares                              | &check; | &check; |
+| 9 | FSM DP        | 1 | 309. Best Time to Buy and Sell Stock with Cooldown| &check; | &check; |
+| 10 | Two String Matching DP | 1 | 10 Regular Expression Matching          | &check; | &check; |
+|   |                         | 2 | 44. Wildcard Matching                   | &check; | &check; |
+|   |                         | 3 | 72. Edit Distance                       | &check; | &check; |
+| 11 | Two Direction DP       | 1 | 11. Container With Most Water           | &check; | &check; |
+|   |                         | 2 | 238. Product of Array Except Self       | &check; | &check; |
+| 12 | 0/1 Knapsack DP        | 1 | 416. Partition Equal Subset Sum         | &check; | &check; |
+|    |                        | 2 | 494. Target Sum                         | &check; | &check; |
+| 13 | Substring DP           | 1 | 139. Word Break                         | &check; | &check; |
+| 14 | Substring              | 1 | 14. Longest Common Prefix               | &check; | &check; |
+|   |                         | 2 | 28. Implement strStr()                  | &check; | &check; |
+|   |                         | 3 | 38. Count and Say                       | &check; | &check; |
+|   |                         | 4 | 271. Encode and Decode Strings          | &check; | &check; |
+| 15 | Linked List            | 1 | 19. Remove Nth Node From End of List    | &check; | &check; |
+|    |                        | 2 | 21. Merge Two Sorted Lists              | &check; | &check; |
+|    |                        | 3 | 141. Linked List Cycle                  | &check; | &check; |
+|    |                        | 4 | 142. Linked List Cycle II               | &check; | &check; |
+|    |                        | 5 | 143. Reorder List                       | &check; | &check; |
+|    |                        | 6 | 148. Sort List                          | &check; | &check; |
+|    |                        | 7 | 160. Intersection of Two Linked Lists   | &check; | &check; |
+|    |                        | 8 | 206. Reverse Linked List                | &check; | &check; |
+|    |                        | 9 | 234. Palindrome Linked List             | &check; | &check; |
+|    |                        | 10 | 237. Delete Node in a Linked List      | &check; | &check; |
+|    |                        | 11 | 285. Inorder Successor in BST          | &check; | &check; |
+|    |                        | 12 | 287. Find the Duplicate Number         | &check; | &check; |
+|    |                        | 13 | 328. Odd Even Linked List              | &check; | &check; |
+| 16 | Double Linked List     | 1 | 146. LRU Cache                          |         | &check; |
+|    |                        | 2 | 460. LFU Cache                          |         | &check; |
 | 17 | Stack                  | 1 | 20. Valid Parentheses                   |   |   |
 |    |                        | 2 | 32. Longest Valid Parentheses           |   |   |
 |    |                        | 3 | 42. Trapping Rain Water                 |   |   |
