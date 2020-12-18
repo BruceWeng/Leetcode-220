@@ -102,6 +102,66 @@ var alienOrder = function(words) {
   return result;
 };
 
+const NODE_STATUS = {
+  UNVISITED: 0,
+  IN_PROGRESS: 1,
+  VISITED: 2
+}
+/**
+ * 2020/12/18 update
+ * @param {string[]} words
+ * @return {string}
+ */
+function alienOrder(words) {
+  if (words.length === 0) return '';
+  // use map because it's iterable
+  const graph = new Map(); // only char shown in words can be valid node
+  const statuses = {};
+  // initialize empty edge for each node
+  for (const word of words) {
+    for (const char of word) {
+      graph.set(char, []);
+      statuses[char] = NODE_STATUS.UNVISITED;
+    }
+  }
+  // add edge to graph
+  // compare two adjacent word, order is only determined when first pair char difference appears
+  for (let i = 0; i < words.length - 1; i++) {
+    const word = words[i];
+    const next_word = words[i+1];
+    if (word.length > next_word.length && word.slice(0, next_word.length) === next_word) {
+      return ''; // invalid 'abc', 'ab' case, cannot compare 'c' with ''
+    }
+    let min_length = Math.min(word.length, next_word.length);
+    for (let j = 0; j < min_length; j++) {
+      if (word[j] !== next_word[j]) {
+        graph.get(word[j]).push(next_word[j]);
+        break;
+      }
+    }
+  }
+  
+  let result = [];
+  for (const node of graph.keys()) {
+    if (hasCycle(node, graph, statuses, result)) return '';
+  }
+  return result.reverse().join('');
+};
+
+function hasCycle(node, graph, statuses, result) {
+  if (statuses[node] === NODE_STATUS.VISITED) return false;
+  if (statuses[node] === NODE_STATUS.IN_PROGRESS) return true;
+  
+  statuses[node] = NODE_STATUS.IN_PROGRESS;
+  for (const next_node of graph.get(node)) {
+    if (hasCycle(next_node, graph, statuses, result)) return true;
+  }
+  
+  statuses[node] = NODE_STATUS.VISITED;
+  result.push(node);
+  return false;
+}
+
 let input0 = [
   "ac",
   "ab",
@@ -131,3 +191,9 @@ let input3 = [
   "z"
 ];
 console.log(alienOrder(input3)); // "" (Explanation: The order is invalid, so return "")
+
+let input4 = [
+  "z",
+  "z"
+];
+console.log(alienOrder(input4)); // "z"
