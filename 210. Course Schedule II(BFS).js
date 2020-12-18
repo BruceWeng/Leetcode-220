@@ -57,3 +57,43 @@ var findOrder = function(numCourses, prerequisites) {
         return result;
      }
 };
+
+/**
+ * 2020/12/18 Update
+ * @param {number} numCourses
+ * @param {number[][]} prerequisites
+ * @return {number[]}
+ */
+function findOrder(numCourses, prerequisites) {
+  if (numCourses === 0) return [];
+  const result = [];
+  const graph = Array(numCourses)
+  .fill()
+  .map(() => []);
+  const in_degrees = Array(numCourses).fill(0);
+  for (const pre of prerequisites) {
+    in_degrees[pre[0]]++;
+    graph[pre[1]].push(pre[0]);
+  }
+  topologicalSort(graph, in_degrees, result);
+  return result.length === numCourses ? result : [];
+};
+
+function topologicalSort(graph, in_degrees, result) {
+  const queue = [];
+  for (let i = 0; i < in_degrees.length; i++) {
+    if (in_degrees[i] === 0) queue.push(i);
+  }
+  while (queue.length !== 0) {
+    let q_length = queue.length;
+    for (let i = 0; i < q_length; i++) {
+      const node = queue.shift();
+      result.push(node);
+      for (const next_node of graph[node]) {
+        in_degrees[next_node]--;
+        if (in_degrees[next_node] === 0) queue.push(next_node);
+      }
+    }
+  }
+  return result;
+}
