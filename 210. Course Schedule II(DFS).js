@@ -71,3 +71,50 @@
        return false;
     }
  };
+
+ /**
+  * 2020/12/18 Update
+ * @param {number} numCourses
+ * @param {number[][]} prerequisites
+ * @return {number[]}
+ */
+function findOrder(numCourses, prerequisites) {
+  if (numCourses === 0) return [];
+  
+  const result = [];
+  const graph = Array(numCourses)
+  .fill()
+  .map(() => []);
+  for (const [next, node] of prerequisites) {
+    graph[node].push(next);
+  }
+  const node_status = {
+    unvisited: 0,
+    in_progress: 1,
+    visited: 2
+  }
+  const statuses = Array(numCourses).fill(node_status.unvisited);
+  
+  for (let i = 0; i < numCourses; i++) {
+    if (hasCycle(i, graph, statuses, node_status, result)) return [];
+  }
+  
+  return result.reverse();
+};
+
+
+function hasCycle(node, graph, statuses, node_status, result) {
+  if (statuses[node] === node_status.visited) return false;
+  if (statuses[node] === node_status.in_progress) return true;
+  
+  statuses[node] = node_status.in_progress
+  for (const next of graph[node]) {
+    if (hasCycle(next, graph, statuses, node_status, result)) {
+      return true;
+    }
+  }
+
+  statuses[node] = node_status.visited;
+  result.push(node);
+  return false;
+}
