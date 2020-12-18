@@ -71,9 +71,9 @@ function findOrder(numCourses, prerequisites) {
   .fill()
   .map(() => []);
   const in_degrees = Array(numCourses).fill(0);
-  for (const [next, node] of prerequisites) {
-    in_degrees[next]++;
-    graph[node].push(next);
+  for (const [next_node, node] of prerequisites) {
+    in_degrees[next_node]++;
+    graph[node].push(next_node);
   }
   topologicalSort(graph, in_degrees, result);
   return result.length === numCourses ? result : [];

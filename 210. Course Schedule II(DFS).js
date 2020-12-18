@@ -72,6 +72,13 @@
     }
  };
 
+ ///////////////////////////////////////
+ const NODE_STATUS = {
+  UNVISITED: 0,
+  IN_PROGRESS: 1,
+  VISITED: 2
+}
+
  /**
   * 2020/12/18 Update
  * @param {number} numCourses
@@ -85,36 +92,32 @@ function findOrder(numCourses, prerequisites) {
   const graph = Array(numCourses)
   .fill()
   .map(() => []);
-  for (const [next, node] of prerequisites) {
-    graph[node].push(next);
+  for (const [next_node, node] of prerequisites) {
+    graph[node].push(next_node);
   }
-  const node_status = {
-    unvisited: 0,
-    in_progress: 1,
-    visited: 2
-  }
-  const statuses = Array(numCourses).fill(node_status.unvisited);
+
+  const statuses = Array(numCourses).fill(NODE_STATUS.UNVISITED);
   
   for (let i = 0; i < numCourses; i++) {
-    if (hasCycle(i, graph, statuses, node_status, result)) return [];
+    if (hasCycle(i, graph, statuses, result)) return [];
   }
   
   return result.reverse();
 };
 
 
-function hasCycle(node, graph, statuses, node_status, result) {
-  if (statuses[node] === node_status.visited) return false;
-  if (statuses[node] === node_status.in_progress) return true;
+function hasCycle(node, graph, statuses, result) {
+  if (statuses[node] === NODE_STATUS.VISITED) return false;
+  if (statuses[node] === NODE_STATUS.IN_PROGRESS) return true;
   
-  statuses[node] = node_status.in_progress
-  for (const next of graph[node]) {
-    if (hasCycle(next, graph, statuses, node_status, result)) {
+  statuses[node] = NODE_STATUS.IN_PROGRESS;
+  for (const next_node of graph[node]) {
+    if (hasCycle(next_node, graph, statuses, result)) {
       return true;
     }
   }
 
-  statuses[node] = node_status.visited;
+  statuses[node] = NODE_STATUS.VISITED;
   result.push(node);
   return false;
 }
