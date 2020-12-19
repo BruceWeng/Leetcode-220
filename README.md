@@ -100,23 +100,25 @@
 |    |                        | 13 | 328. Odd Even Linked List              | &check; | &check; |
 | 16 | Double Linked List     | 1 | 146. LRU Cache                          |         | &check; |
 |    |                        | 2 | 460. LFU Cache                          |         | &check; |
-| 17 | Stack                  | 1 | 20. Valid Parentheses                   |   |   |
-|    |                        | 2 | 32. Longest Valid Parentheses           |   |   |
-|    |                        | 3 | 42. Trapping Rain Water                 |   |   |
-|    |                        | 4 | 84. Largest Rectangle Histogram         |   |   |
-|    |                        | 5 | 85. Maximal Rectangle                   |   |   |
-|    |                        | 6 | 94. Binary Tree Inorder Traversal       |   |   |
-|    |                        | 7 | 100. Same Tree                          |   |   |
-|    |                        | 8 | 104. Maximum Depth of Binary Tree       |   |   |
-|    |                        | 9 | 114. Flatten Binary Tree to Linked List |   |   |
-|    |                        | 10 | 150. Evaluate Reverse Polish Notation  |   |   |
-|    |                        | 11 | 155. Min Stack                         |   |   |
-|    |                        | 12 | 227. Basic Valculator II               |   |   |
-|    |                        | 13 | 230. Kth Smallest Element in BST       |   |   |
-|    |                        | 14 | 236. Lowest Common Ancestor of a Binary Tree |   |   |
-|    |                        | 15 | 341. Flatten Nested List Iterator      |   |   |
-|    |                        | 16 | 394. Decode String                     |   |   |
-|    |                        | 17 | 739. Faily Temperatures                |   |   |
+| 17 | Stack                  | 1 | 20. Valid Parentheses                   | &check; | &check; |
+|    |                        | 2 | 32. Longest Valid Parentheses           | &check; | &check; |
+|    |                        | 3 | 42. Trapping Rain Water                 | &check; | &check; |
+|    |                        | 4 | 84. Largest Rectangle Histogram         |         | &check; |
+|    |                        | 5 | 85. Maximal Rectangle                   |         | &check; |
+|    |                        | 6 | 94. Binary Tree Inorder Traversal       | &check; | &check; |
+|    |                        | 7 | 100. Same Tree                          | &check; | &check; |
+|    |                        | 8 | 104. Maximum Depth of Binary Tree       | &check; | &check; |
+|    |                        | 9 | 114. Flatten Binary Tree to Linked List | &check; | &check; |
+|    |                        | 10 | 150. Evaluate Reverse Polish Notation  | &check; | &check; |
+|    |                        | 11 | 225. Implement Stack using Queues      |         | &check; |
+|    |                        | 12 | 232. Implement Queue using Stacks      | &check; |         | 
+|    |                        | 13 | 155. Min Stack                         |         | &check; |
+|    |                        | 14 | 227. Basic Valculator II               |   |   |
+|    |                        | 15 | 230. Kth Smallest Element in BST       |   |   |
+|    |                        | 16 | 236. Lowest Common Ancestor of a Binary Tree |   |   |
+|    |                        | 17 | 341. Flatten Nested List Iterator      |   |   |
+|    |                        | 18 | 394. Decode String                     |   |   |
+|    |                        | 19 | 739. Faily Temperatures                |   |   |
 | 18 | DFS                    | 1 | 22. Generate Parentheses                |   |   |
 |    |                        | 2 | 94. Binary Tree Inorder Traversal       |   |   |
 |    |                        | 3 | 104. Maximum Depth of Binary Tree       |   |   |
