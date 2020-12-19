@@ -108,19 +108,19 @@ const NODE_STATUS = {
   VISITED: 2
 }
 /**
- * 2020/12/18 update
+ * 2020/12/18 Update cycle detection approach
  * @param {string[]} words
  * @return {string}
  */
 function alienOrder(words) {
   if (words.length === 0) return '';
   // use map because it's iterable
-  const graph = new Map(); // only char shown in words can be valid node
+  const graph = {}; // only char shown in words can be valid node
   const statuses = {};
   // initialize empty edge for each node
   for (const word of words) {
     for (const char of word) {
-      graph.set(char, []);
+      graph[char] = [];
       statuses[char] = NODE_STATUS.UNVISITED;
     }
   }
@@ -135,14 +135,14 @@ function alienOrder(words) {
     let min_length = Math.min(word.length, next_word.length);
     for (let j = 0; j < min_length; j++) {
       if (word[j] !== next_word[j]) {
-        graph.get(word[j]).push(next_word[j]);
+        graph[word[j]].push(next_word[j]);
         break;
       }
     }
   }
   
   let result = [];
-  for (const node of graph.keys()) {
+  for (const node in graph) {
     if (hasCycle(node, graph, statuses, result)) return '';
   }
   return result.reverse().join('');
@@ -153,13 +153,67 @@ function hasCycle(node, graph, statuses, result) {
   if (statuses[node] === NODE_STATUS.IN_PROGRESS) return true;
   
   statuses[node] = NODE_STATUS.IN_PROGRESS;
-  for (const next_node of graph.get(node)) {
+  for (const next_node of graph[node]) {
     if (hasCycle(next_node, graph, statuses, result)) return true;
   }
   
   statuses[node] = NODE_STATUS.VISITED;
   result.push(node);
   return false;
+}
+
+/**
+ * 2020/12/18 Update BFS approach
+ * @param {string[]} words
+ * @return {string}
+ */
+function alienOrder(words) {
+  if (words.length === 0) return '';
+  let result = [];
+  const graph = {};
+  const in_degrees = {};
+  for (const word of words) {
+    for (const char of word) {
+      graph[char] = [];
+      in_degrees[char] = 0;
+    }
+  }
+  for (let i = 0; i < words.length - 1; i++) {
+    const word = words[i];
+    const next_word = words[i+1];
+    if (word.length > next_word.length && word.slice(0, next_word.length) === next_word) return '';
+
+    let min_length = Math.min(word.length, next_word.length);
+    for (let j = 0; j < min_length; j++) {
+      if (word[j] !== next_word[j]) {
+        in_degrees[next_word[j]]++;
+        graph[word[j]].push(next_word[j]);
+        break;
+      }
+    }
+  }
+
+  topologicalSort(graph, in_degrees, result);
+  return result.length === Object.keys(graph).length ? result.join('') : '';
+};
+
+function topologicalSort(graph, in_degrees, result) {
+  const queue = [];
+  for (const node in in_degrees) {
+    if (in_degrees[node] === 0) queue.push(node);
+  }
+  while (queue.length !== 0) {
+    let q_length = queue.length;
+    for (let i = 0; i < q_length; i++) {
+      const node = queue.shift();
+      result.push(node);
+      for (const next_node of graph[node]) {
+        in_degrees[next_node]--;
+        if (in_degrees[next_node] === 0) queue.push(next_node);
+      }
+    }
+  }
+  return result;
 }
 
 let input0 = [
