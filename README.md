@@ -123,107 +123,109 @@
 |    |                        | 5 | 85. Maximal Rectangle                   |         | &check; |
 |    |                        | 6 | 907. Sum of Subarray Minimums           |         | &check; |
 | 19 | Monotonic Queue        | 1 | 239. Sliding Window Maximum             |         | &check; |
-| 20 | DFS                    | 1 | 22. Generate Parentheses                |   |   |
-|    |                        | 2 | 94. Binary Tree Inorder Traversal       |   |   |
-|    |                        | 3 | 104. Maximum Depth of Binary Tree       |   |   |
-| 21 | Postorder DFS          | 1 | 101. Symmetric Tree                     |   |   |
-|    |                        | 2 | 124. Binary Tree Maximum Path Sum       |   |   |
-|    |                        | 3 | 236. Lowest Common Ancestor of a Binary Tree |   |   |
-|    |                        | 4 | 543. Diameter of Binary Tree            |   |   |
-| 22 | Divide and Conquer DFS | 1 | 23 Merge k Sorted Lists                 |   |   |
-|    |                        | 2 | 98. Validate Binary Search Tree         |   |   |
-|    |                        | 3 | 105. Construct Binary Tree from Preorder and Inorder Traversal |   |   |
-|    |                        | 4 | 108. Convert Sorted Array to Binary Search Tree |   |   |
-|    |                        | 5 | 148. Sort List                          |   |   |
-|    |                        | 6 | 212. Word Search II                     |   |   |
-|    |                        | 7 | 230. Kth Smallest Element in BST        |   |   |
-|    |                        | 8 | 285. Inorder Successor in BST           |   |   |
-|    |                        | 9 | 617. Merge Two Binary Trees             |   |   |
-| 23 | Divide and Conquer DFS with Memo | 1 | 337. House Robber III         |   |   |
-|    |                        | 2 | 437. Path Sum III                       |   |   |
-|    |                        | 3 | 572. Subtree of Another Tree            |   |   |
-| 24 | Matrix and Checked     | 1 | 36. Valid sudoku                        |   |   |
-|    |                        | 2 | 289. Game of Life                       |   |   |
-|    |                        | 3 | 348. Design Tic-Tac-Toe                 |   |   |
-| 25 | DFS and Checked        | 1 | 79. Word Search                         |   |   |
-|    |                        | 2 | 130. Surrounded Regions                 |   |   |
-|    |                        | 3 | 133. Clone Graph                        |   |   |
-|    |                        | 4 | 140. Word Break II                      |   |   |
-|    |                        | 5 | 200. Number of Islands                  |   |   |
-|    |                        | 6 | 329. Longest Increasing Path in a Matrix |   |   |
-|    |                        | 7 | 417. Pacific Atlantic Water Flow        |   |   |
-| 26 | BFS and Checked        | 1 | 127. Word Ladder                        |   |   |
-|    |                        | 2 | 130. Surrounded Regions                 |   |   |
-| 27 | Swap                   | 1 | 41. First Missing Positive              |   |   |
-|    |                        | 2 | 344. Reverse String                     |   |   |
-|    |                        | 3 | 380. Insert Delete GetRandom O(1)       |   |   |
-|    |                        | 4 | 448. Find All Numbers Disappeared in an Array |   |   |
-| 28 | 3 Way Reverse          | 1 | 189. Rotate Array                       |   |   |
-| 29 | BFS                    | 1 | 45. Jump Game II                        |   |   |
-|    |                        | 2 | 226. Invert Binary Tree                 |   |   |
-|    |                        | 3 | 297. Serialize and Deserialize Binary Tree |   |   |
-| 30 | Kadane                 | 1 | 53. Maximum Subarray                    |   |   |
-|    |                        | 2 | 152. Maximum Product Subarray           |   |   |
-| 31 | Interval               | 1 | 56. Merge Interval                      |   |   |
-|    |                        | 2 | 57. Insert Interval                     |   |   |
-|    |                        | 3 | 252. Meeting Rooms                      |   |   |
-|    |                        | 4 | 435. Non-overlapping Intervals          |   |   |
-| 32 | Quick Select Partition | 1 | 75. Sort Colors                         |   |   |
-|    |                        | 2 | 215. Kth Largest Element in an Array    |   |   |
-|    |                        | 3 | 324. Wiggle Sort II                     |   |   |
-| 33 | Sliding Window         | 1 | 76. Minimum Window Substring            |   |   |
-|    |                        | 2 | 340. Longest Substring with At Most K Distinct Characters |   |   |
-|    |                        | 3 | 395. Longest Substring with At Least K Repeating Characters |   |   |
-|    |                        | 4 | 424. Longest Repeating Character Replacement |   |   |
-|    |                        | 5 | 438. Find All anagrams in a String      |   |   |
-| 34 | Queue                  | 1 | 101. Symmetric Tree                     |   |   |
-|    |                        | 2 | 102. Binary Tree Level Order Traversal  |   |   |
-|    |                        | 3 | 103. Binary Tree Zigzag Level Order Traversal |   |   |
-|    |                        | 4 | 116. Populating Next Right Pointers in Each Node |   |   |
-| 35 | Greedy                 | 1 | 122. Best Time to Buy and Sell Stock II |   |   |
-|    |                        | 2 | 300. Longest Increasing Subsequence     |   |   |
-|    |                        | 3 | 326. Power of Three                     |   |   |
-|    |                        | 4 | 334. Increasing Triplet Subsequence     |   |   |
-| 36 | Union Find             | 1 | 130. Surrounded Regions                 |   |   |
-|    |                        | 2 | 200. Number of Islands                  |   |   |
-|    |                        | 3 | 261. Graph Balid Tree                   |   |   |
-| 37 | XOR                    | 1 | 136. Single Number                      |   |   |
-|    |                        | 2 | 268. Missing Number                     |   |   |
-| 38 | Point centered gcd     | 1 | 149. Max Points on a Line               |   |   |
-| 39 | Moore's Voting algorithm | 1 | 169. Majority Element                 |   |   |
-| 40 | ASCII                  | 1 | 171. Excel Sheet Column Number          |   |   |
-|    |                        | 2 | 621. Task Scheduler                     |   |   |
-| 41 | Recursion              | 1 | 172. Factorial Trailing Zeros           |   |   |
-| 42 | Sorting Variation      | 1 | 179. Largest Number                     |   |   |
-|    |                        | 2 | 218. The Skyline Problem                |   |   |
-|    |                        | 3 | 324. Wiggle Sort II                     |   |   |
-|    |                        | 4 | 347. Top K Frequent Elements            |   |   |
-|    |                        | 5 | 406. Queue Reconstruction by Height     |   |   |
-| 43 | Bit Manipulation       | 1 | 190. Reverse Bits                       |   |   |
-|    |                        | 2 | 191. Number of 1 Bits                   |   |   |
-|    |                        | 3 | 289. Game of Life                       |   |   |
-|    |                        | 4 | 338. Counting Bits                      |   |   |
-|    |                        | 5 | 371. Sum of Two Integers                |   |   |
-| 44 | Graph, DFS and Check cycle | 1 | 207. Course Schedule                |   |   |
-|    |                            | 2 | 210. Course Schedule II             |   |   |
-|    |                            | 3 | 323. Number of Connected Components in an Undirected Graph |   |   |
-| 45 | Graph, BFS and Topological Sort | 1 | 207. Course Schedule           |   |   |
-|    |                                 | 2 | 210. Course Schedule II        |   |   |
-|    |                                 | 3 | 269. Alien Dictionary          |   |   |
-| 46 | Trie Tree              | 1 | 208. Implement Trie                     |   |   |
-|    |                        | 2 | 211. Add and Search Word - Data structure design |   |   |
-|    |                        | 3 | 212. Word Search II                     |   |   |
-| 47 | Heap                   | 1 | 215. Kth Largest Element in an Array    |   |   |
-|    |                        | 2 | 218. The Skyline Problem                |   |   |
-|    |                        | 3 | 253. Meeting Rooms II                   |   |   |
-|    |                        | 4 | 295. find Median from Data Stream       |   |   |
-| 48 | Shuffle                | 1 | 215. Kth Largest Element in an Array    |   |   |
-|    |                        | 2 | 324. Wiggle Sort II                     |   |   |
-|    |                        | 3 | 384. Shuffle an Array                   |   |   |
-| 49 | Prefix Sum             | 1 | 308. Range Sum Query 2D - Mutable       |   |   |
-|    |                        | 2 | 560. Subarray Sum Equals K              |   |   |  
-| 50 | Merge Sort             | 1 | 315. Count of Smaller Numbers After Self |   |   |
-| 51 | Binary Search Tree     | 1 | 295. find Median from Data Stream       |   |   |
-|    |                        | 2 | 315. Count of Smaller Numbers After Self |   |   |
-| 52 | Binary Indexed Tree    | 1 | 315. Count of Smaller Numbers After Self |   |   |
-| 53 | Negative Mark          | 1 | 448. Find All Numbers Disappeared in an Array |   |   |
+| 20 | DFS                    | 1 | 22. Generate Parentheses                | &check; |         |
+|    |                        | 2 | 94. Binary Tree Inorder Traversal       | &check; |         |
+|    |                        | 3 | 104. Maximum Depth of Binary Tree       | &check; |         |
+| 21 | Postorder DFS          | 1 | 101. Symmetric Tree                     | &check; |         |
+|    |                        | 2 | 124. Binary Tree Maximum Path Sum       | &check; |         |
+|    |                        | 3 | 236. Lowest Common Ancestor of a Binary Tree | &check; |    |
+|    |                        | 4 | 543. Diameter of Binary Tree            | &check; |         |
+| 22 | Divide and Conquer DFS | 1 | 23 Merge k Sorted Lists                 | &check; |         |
+|    |                        | 2 | 98. Validate Binary Search Tree         | &check; |         |
+|    |                        | 3 | 105. Construct Binary Tree from Preorder and Inorder Traversal | &check; |        |
+|    |                        | 4 | 108. Convert Sorted Array to Binary Search Tree | &check; |         |
+|    |                        | 5 | 148. Sort List                          | &check; |         |
+|    |                        | 6 | 212. Word Search II                     | &check; |         |
+|    |                        | 7 | 230. Kth Smallest Element in BST        | &check; |         |
+|    |                        | 8 | 285. Inorder Successor in BST           | &check; |         |
+|    |                        | 9 | 617. Merge Two Binary Trees             | &check; |         |
+| 23 | Divide and Conquer DFS with Memo | 1 | 337. House Robber III         | &check; |         |
+|    |                        | 2 | 437. Path Sum III                       | &check; |         |
+|    |                        | 3 | 572. Subtree of Another Tree            | &check; |         |
+| 24 | Matrix and Checked     | 1 | 36. Valid sudoku                        | &check; | &check; |
+|    |                        | 2 | 289. Game of Life                       | &check; |         |
+|    |                        | 3 | 348. Design Tic-Tac-Toe                 |         | &check; |
+| 25 | DFS and Checked        | 1 | 79. Word Search                         | &check; |         |
+|    |                        | 2 | 127. Word Ladder                        | &check; |         |
+|    |                        | 3 | 130. Surrounded Regions                 | &check; |         |
+|    |                        | 4 | 133. Clone Graph                        | &check; |         |
+|    |                        | 5 | 140. Word Break II                      | &check; |         |
+|    |                        | 6 | 200. Number of Islands                  | &check; |         |
+|    |                        | 7 | 329. Longest Increasing Path in a Matrix | &check; |        |
+|    |                        | 8 | 417. Pacific Atlantic Water Flow        | &check; |         |
+| 26 | BFS and Checked        | 1 | 127. Word Ladder                        |         | &check; |
+|    |                        | 2 | 130. Surrounded Regions                 |         | &check; |
+| 27 | Swap                   | 1 | 41. First Missing Positive              |         | &check; |
+|    |                        | 2 | 344. Reverse String                     |         | &check; |
+|    |                        | 3 | 380. Insert Delete GetRandom O(1)       |         | &check; |
+|    |                        | 4 | 448. Find All Numbers Disappeared in an Array |   | &check; |
+| 28 | 3 Way Reverse          | 1 | 189. Rotate Array                       |         | &check; |
+| 29 | BFS                    | 1 | 45. Jump Game II                        | &check; | &check; |
+|    |                        | 2 | 226. Invert Binary Tree                 | &check; | &check; |
+|    |                        | 3 | 297. Serialize and Deserialize Binary Tree | &check; | &check; |
+| 30 | Kadane                 | 1 | 53. Maximum Subarray                    |         | &check; |
+|    |                        | 2 | 152. Maximum Product Subarray           |         | &check; |
+| 31 | Interval               | 1 | 56. Merge Interval                      |         | &check; |
+|    |                        | 2 | 57. Insert Interval                     |         | &check; |
+|    |                        | 3 | 252. Meeting Rooms                      |         | &check; |
+|    |                        | 4 | 435. Non-overlapping Intervals          |         | &check; |
+| 32 | Quick Select Partition | 1 | 75. Sort Colors                         |         | &check; |
+|    |                        | 2 | 215. Kth Largest Element in an Array    | &check; |         |
+|    |                        | 3 | 324. Wiggle Sort II                     | &check; |         |
+| 33 | Sliding Window         | 1 | 76. Minimum Window Substring            |   | &check; |
+|    |                        | 2 | 340. Longest Substring with At Most K Distinct Characters |   | &check; |
+|    |                        | 3 | 395. Longest Substring with At Least K Repeating Characters |   | &check; |
+|    |                        | 4 | 424. Longest Repeating Character Replacement |    | &check; |
+|    |                        | 5 | 438. Find All anagrams in a String      |         | &check; |
+| 34 | Queue                  | 1 | 101. Symmetric Tree                     |         | &check; |
+|    |                        | 2 | 102. Binary Tree Level Order Traversal  |         | &check; |
+|    |                        | 3 | 103. Binary Tree Zigzag Level Order Traversal |   | &check; |
+|    |                        | 4 | 116. Populating Next Right Pointers in Each Node |   | &check; |
+| 35 | Greedy                 | 1 | 122. Best Time to Buy and Sell Stock II |         | &check; |
+|    |                        | 2 | 300. Longest Increasing Subsequence     |         | &check; |
+|    |                        | 3 | 326. Power of Three                     |         | &check; |
+|    |                        | 4 | 334. Increasing Triplet Subsequence     |         | &check; |
+| 36 | Union Find             | 1 | 130. Surrounded Regions                 | &check; |         |
+|    |                        | 2 | 200. Number of Islands                  | &check; |         |
+|    |                        | 3 | 261. Graph Balid Tree                   | &check; |         |
+| 37 | XOR                    | 1 | 136. Single Number                      |         | &check; |
+|    |                        | 2 | 268. Missing Number                     |         | &check; |
+| 38 | Point centered gcd     | 1 | 149. Max Points on a Line               |         | &check; |
+| 39 | Moore's Voting algorithm | 1 | 169. Majority Element                 |         | &check; |
+| 40 | ASCII                  | 1 | 171. Excel Sheet Column Number          |         | &check; |
+|    |                        | 2 | 621. Task Scheduler                     |         | &check; |
+| 41 | Recursion              | 1 | 172. Factorial Trailing Zeros           | &check; |         |
+| 42 | Sorting Variation      | 1 | 179. Largest Number                     |         | &check; |
+|    |                        | 2 | 218. The Skyline Problem                |         | &check; |
+|    |                        | 3 | 324. Wiggle Sort II                     |         | &check; |
+|    |                        | 4 | 347. Top K Frequent Elements            |         | &check; |
+|    |                        | 5 | 406. Queue Reconstruction by Height     |         | &check; |
+| 43 | Bit Manipulation       | 1 | 190. Reverse Bits                       |         | &check; |
+|    |                        | 2 | 191. Number of 1 Bits                   |         | &check; |
+|    |                        | 3 | 289. Game of Life                       | &check; |         |
+|    |                        | 4 | 338. Counting Bits                      |         | &check; |
+|    |                        | 5 | 371. Sum of Two Integers                | &check; |         |
+| 44 | Graph, DFS and Check cycle | 1 | 207. Course Schedule                | &check; |         |
+|    |                            | 2 | 210. Course Schedule II             | &check; |         |
+|    |                            | 3 | 323. Number of Connected Components in an Undirected Graph | &check; |   |
+| 45 | Graph, BFS and Topological Sort | 1 | 207. Course Schedule           |         | &check; |
+|    |                                 | 2 | 210. Course Schedule II        |         | &check; |
+|    |                                 | 3 | 269. Alien Dictionary          |         | &check; |
+| 46 | Trie Tree              | 1 | 208. Implement Trie                     |         | &check; |
+|    |                        | 2 | 211. Add and Search Word - Data structure design | &check; | &check; |
+|    |                        | 3 | 212. Word Search II                     | &check; |         |
+| 47 | Heap                   | 1 | 215. Kth Largest Element in an Array    |         | &check; |
+|    |                        | 2 | 218. The Skyline Problem                |         | &check; |
+|    |                        | 3 | 253. Meeting Rooms II                   |         | &check; |
+|    |                        | 4 | 295. find Median from Data Stream       |         | &check; |
+| 48 | Shuffle                | 1 | 215. Kth Largest Element in an Array    | &check; |         |
+|    |                        | 2 | 324. Wiggle Sort II                     | &check; |         |
+|    |                        | 3 | 384. Shuffle an Array                   |         | &check; |
+| 49 | Prefix Sum             | 1 | 308. Range Sum Query 2D - Mutable       |         | &check; |
+|    |                        | 2 | 560. Subarray Sum Equals K              |         | &check; |  
+| 50 | Merge Sort             | 1 | 315. Count of Smaller Numbers After Self | &check; |        |
+| 51 | Binary Search Tree     | 1 | 295. find Median from Data Stream       | &check; |         |
+|    |                        | 2 | 315. Count of Smaller Numbers After Self | &check; |        |
+| 52 | Binary Indexed Tree    | 1 | 315. Count of Smaller Numbers After Self |        | &check; |
+| 53 | Negative Mark          | 1 | 448. Find All Numbers Disappeared in an Array |   | &check; |
+| 54 | Bellman-Ford, Dijkstra | 1 | 743. Network Delay Time                 |         | &check; |
