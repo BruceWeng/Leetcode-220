@@ -102,20 +102,20 @@
 |    |                        | 2 | 460. LFU Cache                          |         | &check; |
 | 17 | Stack                  | 1 | 20. Valid Parentheses                   | &check; | &check; |
 |    |                        | 2 | 32. Longest Valid Parentheses           | &check; | &check; |
-|    |                        | 6 | 94. Binary Tree Inorder Traversal       | &check; | &check; |
-|    |                        | 7 | 100. Same Tree                          | &check; | &check; |
-|    |                        | 8 | 104. Maximum Depth of Binary Tree       | &check; | &check; |
-|    |                        | 9 | 114. Flatten Binary Tree to Linked List | &check; | &check; |
-|    |                        | 10 | 150. Evaluate Reverse Polish Notation  | &check; | &check; |
-|    |                        | 11 | 225. Implement Stack using Queues      |         | &check; |
-|    |                        | 12 | 232. Implement Queue using Stacks      | &check; |         | 
-|    |                        | 13 | 155. Min Stack                         |         | &check; |
-|    |                        | 14 | 227. Basic Valculator II               | &check; | &check; |
-|    |                        | 15 | 230. Kth Smallest Element in BST       | &check; | &check; | 
-|    |                        | 16 | 236. Lowest Common Ancestor of a Binary Tree | &check; | &check; |
-|    |                        | 17 | 341. Flatten Nested List Iterator      | &check; | &check; |
-|    |                        | 18 | 394. Decode String                     |         | &check; |
-|    |                        | 19 | 739. Daily Temperatures                | &check; | &check; |
+|    |                        | 3 | 94. Binary Tree Inorder Traversal       | &check; | &check; |
+|    |                        | 4 | 100. Same Tree                          | &check; | &check; |
+|    |                        | 5 | 104. Maximum Depth of Binary Tree       | &check; | &check; |
+|    |                        | 6 | 114. Flatten Binary Tree to Linked List | &check; | &check; |
+|    |                        | 7 | 150. Evaluate Reverse Polish Notation   | &check; | &check; |
+|    |                        | 8 | 225. Implement Stack using Queues       |         | &check; |
+|    |                        | 9 | 232. Implement Queue using Stacks       | &check; |         | 
+|    |                        | 10 | 155. Min Stack                         |         | &check; |
+|    |                        | 11 | 227. Basic Valculator II               | &check; | &check; |
+|    |                        | 12 | 230. Kth Smallest Element in BST       | &check; | &check; | 
+|    |                        | 13 | 236. Lowest Common Ancestor of a Binary Tree | &check; | &check; |
+|    |                        | 14 | 341. Flatten Nested List Iterator      | &check; | &check; |
+|    |                        | 15 | 394. Decode String                     |         | &check; |
+|    |                        | 16 | 739. Daily Temperatures                | &check; | &check; |
 | 18 | Monotonic Stack        | 1 | 496. Next Greater Element I             |         | &check; |
 |    |                        | 2 | 503. Next Greater Element II            |         | &check; |
 |    |                        | 3 | 42. Trapping Rain Water                 | &check; | &check; |
