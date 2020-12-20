@@ -78,6 +78,40 @@ def slidingWindowMax(nums, k):
     return sliding_max
 
 '''
-To add Deque solution
+Monotonic queue solution
 T: O(n), S: O(k)
 '''
+class Monoqueue {
+    deque<int> myque; // every element in this queue is maintained to be monotonously decreasing.
+public:
+    void push(int n) {
+        while(!myque.empty() && myque.back() < n) myque.pop_back();
+        myque.push_back(n);
+    }
+    
+    int front() {
+        return myque.front();
+    }
+    
+    void pop(int n) {
+        if(n == myque.front())
+            myque.pop_front();
+    }
+};
+
+class Solution {
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        Monoqueue mq;
+        vector<int> res;
+        for(int i = 0; i < nums.size(); ++i) {
+            if(i < k-1) mq.push(nums[i]);
+            else {
+                mq.push(nums[i]);
+                res.push_back(mq.front());
+                mq.pop(nums[i-k+1]);
+            }
+        }
+        return res;
+    }
+};
