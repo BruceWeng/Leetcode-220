@@ -136,9 +136,10 @@
 |    |                        | 4 | 108. Convert Sorted Array to Binary Search Tree | &check; |         |
 |    |                        | 5 | 148. Sort List                          | &check; |         |
 |    |                        | 6 | 212. Word Search II                     | &check; |         |
-|    |                        | 7 | 230. Kth Smallest Element in BST        | &check; |         |
-|    |                        | 8 | 285. Inorder Successor in BST           | &check; |         |
-|    |                        | 9 | 617. Merge Two Binary Trees             | &check; |         |
+|    |                        | 7 | 218. The Skyline Problem                | &check; |         |
+|    |                        | 8 | 230. Kth Smallest Element in BST        | &check; |         |
+|    |                        | 9 | 285. Inorder Successor in BST           | &check; |         |
+|    |                        | 10 | 617. Merge Two Binary Trees            | &check; |         |
 | 23 | Divide and Conquer DFS with Memo | 1 | 337. House Robber III         | &check; |         |
 |    |                        | 2 | 437. Path Sum III                       | &check; |         |
 |    |                        | 3 | 572. Subtree of Another Tree            | &check; |         |
@@ -196,10 +197,9 @@
 |    |                        | 2 | 621. Task Scheduler                     |         | &check; |
 | 41 | Recursion              | 1 | 172. Factorial Trailing Zeros           | &check; |         |
 | 42 | Sorting Variation      | 1 | 179. Largest Number                     |         | &check; |
-|    |                        | 2 | 218. The Skyline Problem                |         | &check; |
-|    |                        | 3 | 324. Wiggle Sort II                     |         | &check; |
-|    |                        | 4 | 347. Top K Frequent Elements            |         | &check; |
-|    |                        | 5 | 406. Queue Reconstruction by Height     |         | &check; |
+|    |                        | 2 | 324. Wiggle Sort II                     |         | &check; |
+|    |                        | 3 | 347. Top K Frequent Elements            |         | &check; |
+|    |                        | 4 | 406. Queue Reconstruction by Height     |         | &check; |
 | 43 | Bit Manipulation       | 1 | 190. Reverse Bits                       |         | &check; |
 |    |                        | 2 | 191. Number of 1 Bits                   |         | &check; |
 |    |                        | 3 | 289. Game of Life                       | &check; |         |
@@ -215,9 +215,9 @@
 |    |                        | 2 | 211. Add and Search Word - Data structure design | &check; | &check; |
 |    |                        | 3 | 212. Word Search II                     | &check; |         |
 | 47 | Heap                   | 1 | 215. Kth Largest Element in an Array    |         | &check; |
-|    |                        | 2 | 218. The Skyline Problem                |         | &check; |
-|    |                        | 3 | 253. Meeting Rooms II                   |         | &check; |
-|    |                        | 4 | 295. find Median from Data Stream       |         | &check; |
+|    |                        | 2 | 253. Meeting Rooms II                   |         | &check; |
+|    |                        | 3 | 295. find Median from Data Stream       |         | &check; |
+|    |                        | 4 | 743. Network Delay Time                 |         | &check; |
 | 48 | Shuffle                | 1 | 215. Kth Largest Element in an Array    | &check; |         |
 |    |                        | 2 | 324. Wiggle Sort II                     | &check; |         |
 |    |                        | 3 | 384. Shuffle an Array                   |         | &check; |
