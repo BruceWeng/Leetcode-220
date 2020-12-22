@@ -169,7 +169,8 @@
 | 31 | Interval               | 1 | 56. Merge Interval                      |         | &check; |
 |    |                        | 2 | 57. Insert Interval                     |         | &check; |
 |    |                        | 3 | 252. Meeting Rooms                      |         | &check; |
-|    |                        | 4 | 435. Non-overlapping Intervals          |         | &check; |
+|    |                        | 4 | 253. Meeting Rooms II                   |         | &check; |
+|    |                        | 5 | 435. Non-overlapping Intervals          |         | &check; |
 | 32 | Quick Select Partition | 1 | 75. Sort Colors                         |         | &check; |
 |    |                        | 2 | 215. Kth Largest Element in an Array    | &check; |         |
 |    |                        | 3 | 324. Wiggle Sort II                     | &check; |         |
@@ -215,17 +216,15 @@
 |    |                        | 2 | 211. Add and Search Word - Data structure design | &check; | &check; |
 |    |                        | 3 | 212. Word Search II                     | &check; |         |
 | 47 | Heap                   | 1 | 215. Kth Largest Element in an Array    |         | &check; |
-|    |                        | 2 | 253. Meeting Rooms II                   |         | &check; |
-|    |                        | 3 | 295. find Median from Data Stream       |         | &check; |
-|    |                        | 4 | 743. Network Delay Time                 |         | &check; |
+|    |                        | 2 | 295. find Median from Data Stream       |         | &check; |
+|    |                        | 3 | 743. Network Delay Time                 |         | &check; |
 | 48 | Shuffle                | 1 | 215. Kth Largest Element in an Array    | &check; |         |
 |    |                        | 2 | 324. Wiggle Sort II                     | &check; |         |
 |    |                        | 3 | 384. Shuffle an Array                   |         | &check; |
 | 49 | Prefix Sum             | 1 | 308. Range Sum Query 2D - Mutable       |         | &check; |
 |    |                        | 2 | 560. Subarray Sum Equals K              |         | &check; |  
 | 50 | Merge Sort             | 1 | 315. Count of Smaller Numbers After Self | &check; |        |
-| 51 | Binary Search Tree     | 1 | 295. find Median from Data Stream       | &check; |         |
-|    |                        | 2 | 315. Count of Smaller Numbers After Self | &check; |        |
+| 51 | Binary Search Tree     | 1 | 315. Count of Smaller Numbers After Self | &check; |        |
 | 52 | Binary Indexed Tree    | 1 | 315. Count of Smaller Numbers After Self |        | &check; |
 | 53 | Negative Mark          | 1 | 448. Find All Numbers Disappeared in an Array |   | &check; |
 | 54 | Bellman-Ford, Dijkstra | 1 | 743. Network Delay Time                 |         | &check; |
