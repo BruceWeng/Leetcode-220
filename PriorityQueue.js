@@ -1,4 +1,4 @@
-class PriorityQueue {
+module.exports = class PriorityQueue {
   constructor(compareFunc=(a, b) => a - b) { // min heap by default
     this.heap = [];
     this.compare = compareFunc;
