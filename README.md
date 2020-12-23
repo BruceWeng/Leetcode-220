@@ -1,4 +1,23 @@
 # Leetcode Core 220
+## Iterative problems:
+1. Shuffle
+2. HashMap
+3. Pointers
+4. LRU/LFU cache and Trie
+5. Monotonic stack/queue
+6. Level order/BFS/Topological sort
+7. Kadane
+8. Interval
+9. Sliding window
+
+## Recursive problems:
+1. Divide and conquor
+2. Priority queue
+3. Quick select/Merge sort
+4. Union find
+5. DFS/Check cycle
+6. Recursion and memoization
+
 ## Solutions of top 100 liked and top frequently asked interview questions.
 | # | Category      | # | Questions                                         | R       | I       |
 |:-:|:-------------:|:-:|-------------------------------------------------- |:-------:|:-------:|
