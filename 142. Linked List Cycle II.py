@@ -17,9 +17,9 @@ start point         meet point
     |        |         |
   slow2      |         |
              +---------+
-                  X=A
-A+B+X+B = 2A+2B
-X=A
+                  X
+A+B+X = 2A+2B
+X=A+B
 
 1. Let slow pointer = head, fast pointer = head
 2. slow moves 1 step, fast moves steps each time

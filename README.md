@@ -105,7 +105,7 @@
 |    |                        | 2 | 19. Remove Nth Node From End of List    | &check; | &check; |
 |    |                        | 3 | 21. Merge Two Sorted Lists              | &check; | &check; |
 |    |                        | 4 | 141. Linked List Cycle                  | &check; | &check; |
-|    |                        | 5 | 142. Linked List Cycle II               | &check; | &check; |
+|    |                        | 5 | 142. Linked List Cycle II               |         | &check; |
 |    |                        | 6 | 143. Reorder List                       | &check; | &check; |
 |    |                        | 7 | 148. Sort List                          | &check; | &check; |
 |    |                        | 8 | 160. Intersection of Two Linked Lists   | &check; | &check; |
