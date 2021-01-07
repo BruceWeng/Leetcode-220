@@ -32,8 +32,7 @@
 |   |               | 9 | 380. Insert Delete GetRandom O(1)                 |         | &check; |
 |   |               | 10 | 387. First Unique Character in a String          |         | &check; |
 |   |               | 11 | 454. 4Sum II                                     |         | &check; |
-|   |               | 12 | 560. subarray Sum Equals K                       | &check; | &check; |
-|   |               | 13 | 763. Partition Labels                            | &check; | &check; |
+|   |               | 12 | 560. subarray Sum Equals K                       |         | &check; |
 | 2 | Pointers      | 1 | 2. Add Two Numbers                                | &check; | &check; |
 |   |               | 2 | 15. 3Sum                                          |         | &check; |
 |   |               | 3 | 26. Remove Duplicates from Sorted Array           |         | &check; |
@@ -198,6 +197,7 @@
 |    |                        | 4 | 395. Longest Substring with At Least K Repeating Characters |   | &check; |
 |    |                        | 5 | 424. Longest Repeating Character Replacement |    | &check; |
 |    |                        | 6 | 438. Find All anagrams in a String      |         | &check; |
+|    |                        | 7 | 763. Partition Labels                   |         | &check; |
 | 34 | Queue                  | 1 | 101. Symmetric Tree                     |         | &check; |
 |    |                        | 2 | 102. Binary Tree Level Order Traversal  |         | &check; |
 |    |                        | 3 | 103. Binary Tree Zigzag Level Order Traversal |   | &check; |
