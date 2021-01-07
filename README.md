@@ -33,25 +33,24 @@
 |   |               | 10 | 387. First Unique Character in a String          |         | &check; |
 |   |               | 11 | 454. 4Sum II                                     |         | &check; |
 |   |               | 12 | 560. subarray Sum Equals K                       |         | &check; |
-| 2 | Pointers      | 1 | 2. Add Two Numbers                                | &check; | &check; |
-|   |               | 2 | 15. 3Sum                                          |         | &check; |
-|   |               | 3 | 26. Remove Duplicates from Sorted Array           |         | &check; |
-|   |               | 4 | 48. Rotate Image                                  |         | &check; |
-|   |               | 5 | 54. Spiral Matrix                                 |         | &check; |
-|   |               | 6 | 66. Plus One                                      |         | &check; |
-|   |               | 7 | 73. Set Matrix Zeros                              |         | &check; |
-|   |               | 8 | 88. Merge Sorted Array                            |         | &check; |                  
-|   |               | 9 | 116. Populating Next Right Pointers in Each Node  | &check; | &check; |
-|   |               | 10 | 125. Valid Palindrome                            |         | &check; |
-|   |               | 11 | 163. Missing Ranges                              |         | &check; |
-|   |               | 12 | 240. Search a 2D Matrix II                       | &check; | &check; |
-|   |               | 13 | 251. Flatten 2D Vector                           |         | &check; |
-|   |               | 14 | 277. Find the Celebrity                          |         | &check; |
-|   |               | 15 | 283. Move Zeros                                  |         | &check; |
-|   |               | 16 | 412. Fizz Buzz                                   |         | &check; |
-|   |               | 17 | 581. Shortest Unsorted Continuous Subarray       | &check; | &check; |
-|   |               | 18 | 647. Palindromic Substrings                      | &check; | &check; |
-|   |               | 19 | 763. Partition Labels                            | &check; | &check; |
+| 2 | Pointers      | 1 | 15. 3Sum                                          |         | &check; |
+|   |               | 2 | 26. Remove Duplicates from Sorted Array           |         | &check; |
+|   |               | 3 | 48. Rotate Image                                  |         | &check; |
+|   |               | 4 | 54. Spiral Matrix                                 |         | &check; |
+|   |               | 5 | 66. Plus One                                      |         | &check; |
+|   |               | 6 | 73. Set Matrix Zeros                              |         | &check; |
+|   |               | 7 | 88. Merge Sorted Array                            |         | &check; |                  
+|   |               | 8 | 116. Populating Next Right Pointers in Each Node  | &check; | &check; |
+|   |               | 9 | 125. Valid Palindrome                             |         | &check; |
+|   |               | 10 | 163. Missing Ranges                              |         | &check; |
+|   |               | 11 | 240. Search a 2D Matrix II                       | &check; | &check; |
+|   |               | 12 | 251. Flatten 2D Vector                           |         | &check; |
+|   |               | 13 | 277. Find the Celebrity                          |         | &check; |
+|   |               | 14 | 283. Move Zeros                                  |         | &check; |
+|   |               | 15 | 412. Fizz Buzz                                   |         | &check; |
+|   |               | 16 | 581. Shortest Unsorted Continuous Subarray       | &check; | &check; |
+|   |               | 17 | 647. Palindromic Substrings                      | &check; | &check; |
+|   |               | 18 | 763. Partition Labels                            | &check; | &check; |
 | 3 | Binary Search | 1 | 4. Median of Two Sorted Arrays                    | &check; |         |
 |   |               | 2 | 33. Search in Rotated Sorted Array                | &check; | &check; |
 |   |               | 3 | 34. Search for a Range                            | &check; | &check; |
@@ -102,19 +101,20 @@
 |    |                        | 2 | 28. Implement strStr()                  | &check; | &check; |
 |    |                        | 3 | 38. Count and Say                       | &check; | &check; |
 |    |                        | 4 | 271. Encode and Decode Strings          | &check; | &check; |
-| 15 | Linked List            | 1 | 19. Remove Nth Node From End of List    | &check; | &check; |
-|    |                        | 2 | 21. Merge Two Sorted Lists              | &check; | &check; |
-|    |                        | 3 | 141. Linked List Cycle                  | &check; | &check; |
-|    |                        | 4 | 142. Linked List Cycle II               | &check; | &check; |
-|    |                        | 5 | 143. Reorder List                       | &check; | &check; |
-|    |                        | 6 | 148. Sort List                          | &check; | &check; |
-|    |                        | 7 | 160. Intersection of Two Linked Lists   | &check; | &check; |
-|    |                        | 8 | 206. Reverse Linked List                | &check; | &check; |
-|    |                        | 9 | 234. Palindrome Linked List             | &check; | &check; |
-|    |                        | 10 | 237. Delete Node in a Linked List      | &check; | &check; |
-|    |                        | 11 | 285. Inorder Successor in BST          | &check; | &check; |
-|    |                        | 12 | 287. Find the Duplicate Number         | &check; | &check; |
-|    |                        | 13 | 328. Odd Even Linked List              | &check; | &check; |
+| 15 | Linked List            | 1 | 2. Add Two Numbers                      | &check; | &check; |
+|    |                        | 2 | 19. Remove Nth Node From End of List    | &check; | &check; |
+|    |                        | 3 | 21. Merge Two Sorted Lists              | &check; | &check; |
+|    |                        | 4 | 141. Linked List Cycle                  | &check; | &check; |
+|    |                        | 5 | 142. Linked List Cycle II               | &check; | &check; |
+|    |                        | 6 | 143. Reorder List                       | &check; | &check; |
+|    |                        | 7 | 148. Sort List                          | &check; | &check; |
+|    |                        | 8 | 160. Intersection of Two Linked Lists   | &check; | &check; |
+|    |                        | 9 | 206. Reverse Linked List                | &check; | &check; |
+|    |                        | 10 | 234. Palindrome Linked List            | &check; | &check; |
+|    |                        | 11 | 237. Delete Node in a Linked List      | &check; | &check; |
+|    |                        | 12 | 285. Inorder Successor in BST          | &check; | &check; |
+|    |                        | 13 | 287. Find the Duplicate Number         | &check; | &check; |
+|    |                        | 14 | 328. Odd Even Linked List              | &check; | &check; |
 | 16 | Double Linked List     | 1 | 146. LRU Cache                          |         | &check; |
 |    |                        | 2 | 460. LFU Cache                          |         | &check; |
 | 17 | Stack                  | 1 | 20. Valid Parentheses                   | &check; | &check; |
