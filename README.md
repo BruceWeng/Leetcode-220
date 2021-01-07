@@ -22,19 +22,18 @@
 | # | Category      | # | Questions                                         | R       | I       |
 |:-:|:-------------:|:-:|-------------------------------------------------- |:-------:|:-------:|
 | 1 | HashMap       | 1 | 1. Two Sum                                        |         | &check; |
-|   |               | 2 | 3. Longest Substring Without Repeating Characters | &check; | &check; |
-|   |               | 3 | 13. Roman to Integer                              |         | &check; |
-|   |               | 4 | 49. Group Anagrams                                |         | &check; |
-|   |               | 5 | 138. Copy List with Random Pointer                |         | &check; |
-|   |               | 6 | 169. Majority Element                             |         | &check; |
-|   |               | 7 | 217. Contains Duplicate                           |         | &check; |
-|   |               | 8 | 242. Valid Anagram                                |         | &check; |
-|   |               | 9 | 350. Intersection of Two Arrays II                |         | &check; |
-|   |               | 10 | 380. Insert Delete GetRandom O(1)                |         | &check; |
-|   |               | 11 | 387. First Unique Character in a String          |         | &check; |
-|   |               | 12 | 454. 4Sum II                                     |         | &check; |
-|   |               | 13 | 560. subarray Sum Equals K                       | &check; | &check; |
-|   |               | 14 | 763. Partition Labels                            | &check; | &check; |
+|   |               | 2 | 13. Roman to Integer                              |         | &check; |
+|   |               | 3 | 49. Group Anagrams                                |         | &check; |
+|   |               | 4 | 138. Copy List with Random Pointer                |         | &check; |
+|   |               | 5 | 169. Majority Element                             |         | &check; |
+|   |               | 6 | 217. Contains Duplicate                           |         | &check; |
+|   |               | 7 | 242. Valid Anagram                                |         | &check; |
+|   |               | 8 | 350. Intersection of Two Arrays II                |         | &check; |
+|   |               | 9 | 380. Insert Delete GetRandom O(1)                 |         | &check; |
+|   |               | 10 | 387. First Unique Character in a String          |         | &check; |
+|   |               | 11 | 454. 4Sum II                                     |         | &check; |
+|   |               | 12 | 560. subarray Sum Equals K                       | &check; | &check; |
+|   |               | 13 | 763. Partition Labels                            | &check; | &check; |
 | 2 | Pointers      | 1 | 2. Add Two Numbers                                | &check; | &check; |
 |   |               | 2 | 15. 3Sum                                          |         | &check; |
 |   |               | 3 | 26. Remove Duplicates from Sorted Array           |         | &check; |
@@ -93,17 +92,17 @@
 |   |               | 5 | 279. Perfect Squares                              | &check; | &check; |
 | 9 | FSM DP        | 1 | 309. Best Time to Buy and Sell Stock with Cooldown| &check; | &check; |
 | 10 | Two String Matching DP | 1 | 10 Regular Expression Matching          | &check; | &check; |
-|   |                         | 2 | 44. Wildcard Matching                   | &check; | &check; |
-|   |                         | 3 | 72. Edit Distance                       | &check; | &check; |
+|    |                        | 2 | 44. Wildcard Matching                   | &check; | &check; |
+|    |                        | 3 | 72. Edit Distance                       | &check; | &check; |
 | 11 | Two Direction DP       | 1 | 11. Container With Most Water           | &check; | &check; |
-|   |                         | 2 | 238. Product of Array Except Self       | &check; | &check; |
+|    |                        | 2 | 238. Product of Array Except Self       | &check; | &check; |
 | 12 | 0/1 Knapsack DP        | 1 | 416. Partition Equal Subset Sum         | &check; | &check; |
 |    |                        | 2 | 494. Target Sum                         | &check; | &check; |
 | 13 | Substring DP           | 1 | 139. Word Break                         | &check; | &check; |
 | 14 | Substring              | 1 | 14. Longest Common Prefix               | &check; | &check; |
-|   |                         | 2 | 28. Implement strStr()                  | &check; | &check; |
-|   |                         | 3 | 38. Count and Say                       | &check; | &check; |
-|   |                         | 4 | 271. Encode and Decode Strings          | &check; | &check; |
+|    |                        | 2 | 28. Implement strStr()                  | &check; | &check; |
+|    |                        | 3 | 38. Count and Say                       | &check; | &check; |
+|    |                        | 4 | 271. Encode and Decode Strings          | &check; | &check; |
 | 15 | Linked List            | 1 | 19. Remove Nth Node From End of List    | &check; | &check; |
 |    |                        | 2 | 21. Merge Two Sorted Lists              | &check; | &check; |
 |    |                        | 3 | 141. Linked List Cycle                  | &check; | &check; |
@@ -193,11 +192,12 @@
 | 32 | Quick Select Partition | 1 | 75. Sort Colors                         |         | &check; |
 |    |                        | 2 | 215. Kth Largest Element in an Array    | &check; |         |
 |    |                        | 3 | 324. Wiggle Sort II                     | &check; |         |
-| 33 | Sliding Window         | 1 | 76. Minimum Window Substring            |   | &check; |
-|    |                        | 2 | 340. Longest Substring with At Most K Distinct Characters |   | &check; |
-|    |                        | 3 | 395. Longest Substring with At Least K Repeating Characters |   | &check; |
-|    |                        | 4 | 424. Longest Repeating Character Replacement |    | &check; |
-|    |                        | 5 | 438. Find All anagrams in a String      |         | &check; |
+| 33 | Sliding Window         | 1 | 3. Longest Substring Without Repeating Characters |   | &check; |
+|    |                        | 2 | 76. Minimum Window Substring            |         | &check; |
+|    |                        | 3 | 340. Longest Substring with At Most K Distinct Characters |   | &check; |
+|    |                        | 4 | 395. Longest Substring with At Least K Repeating Characters |   | &check; |
+|    |                        | 5 | 424. Longest Repeating Character Replacement |    | &check; |
+|    |                        | 6 | 438. Find All anagrams in a String      |         | &check; |
 | 34 | Queue                  | 1 | 101. Symmetric Tree                     |         | &check; |
 |    |                        | 2 | 102. Binary Tree Level Order Traversal  |         | &check; |
 |    |                        | 3 | 103. Binary Tree Zigzag Level Order Traversal |   | &check; |
