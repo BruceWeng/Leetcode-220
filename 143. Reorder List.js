@@ -49,12 +49,14 @@ const reorderList = function(head) {
     }
 
     // Reorder and merge the two lists
-    first = head;
-    second = mid.next;
+    let first = head;
+    let second = mid.next;
     while (second !== null) {
+        // rewire node.next in backward
         mid.next = second.next;
         second.next = first.next;
         first.next = second;
+        // move pointers
         first = second.next;
         second = mid.next;
     }
