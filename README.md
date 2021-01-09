@@ -52,8 +52,8 @@
 |   |               | 17 | 647. Palindromic Substrings                      | &check; | &check; |
 |   |               | 18 | 763. Partition Labels                            | &check; | &check; |
 | 3 | Binary Search | 1 | 4. Median of Two Sorted Arrays                    | &check; |         |
-|   |               | 2 | 33. Search in Rotated Sorted Array                | &check; | &check; |
-|   |               | 3 | 34. Search for a Range                            | &check; | &check; |
+|   |               | 2 | 33. Search in Rotated Sorted Array                |         | &check; |
+|   |               | 3 | 34. Search for a Range (First and Last Position)  |         | &check; |
 |   |               | 4 | 69. Sqrt(x)                                       | &check; | &check; |
 |   |               | 5 | 153. Minimum in Rotated Sorted Array              | &check; | &check; |
 |   |               | 6 | 162. Find Peak Element                            | &check; | &check; |
