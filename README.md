@@ -17,6 +17,7 @@
 4. Union find
 5. DFS/Check cycle
 6. Recursion and memoization
+7. All path(backtracking)
 
 ## Solutions of top 100 liked and top frequently asked interview questions.
 | # | Category      | # | Questions                                         | R       | I       |
