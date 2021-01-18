@@ -25,10 +25,14 @@ const inorderHelper = (root, result) => {
   inorderHelper(root.right, result); // traverse right subtree
 };
 
+const ACTION = {
+  VISIT: 0,
+  PUSH: 1
+}
 // Iterative solution
-function Command(action, node) {
+function Command(next_action, node) {
   return {
-    action, // 0: visit, 1: push to result
+    next_action, // 0: visit, 1: push to result
     node
   };
 }
@@ -36,20 +40,20 @@ function Command(action, node) {
 const inorderIter = root => {
   if (root === undefined || root === null) return [];
   let result = [];
-  let stack = [new Command(0, root)];
+  let stack = [Command(ACTION.VISIT, root)];
   while (stack.length !== 0) {
     let curr = stack.pop();
 
-    if (curr.action === 1) {
+    if (curr.next_action === ACTION.PUSH) {
       result.push(curr.node.val);
       continue;
     }
 
     // Put next action for nodes in reversed order
     // (1. Visit left node, 2. Push curr node, 3. Visit right node)
-    if (curr.node.right !== null) stack.push(new Command(0, curr.node.right));
-    stack.push(new Command(1, curr.node));
-    if (curr.node.left !== null) stack.push(new Command(0, curr.node.left));
+    if (curr.node.right !== null) stack.push(Command(ACTION.VISIT, curr.node.right));
+    stack.push(Command(ACTION.PUSH, curr.node));
+    if (curr.node.left !== null) stack.push(Command(ACTION.VISIT, curr.node.left));
   }
 
   return result;
