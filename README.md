@@ -4,11 +4,12 @@
 2. HashMap
 3. Pointers
 4. LRU/LFU cache and Trie
-5. Monotonic stack/queue
-6. Level order/BFS/Topological sort
-7. Kadane
-8. Interval
-9. Sliding window
+5. Queue/Stack with tuple
+6. Monotonic stack/queue
+7. Level order/BFS/Topological sort
+8. Kadane
+9. Interval
+10. Sliding window
 
 ## Recursive problems:
 1. Divide and conquor
