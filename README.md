@@ -51,8 +51,7 @@
 |   |               | 14 | 283. Move Zeros                                  |         | &check; |
 |   |               | 15 | 412. Fizz Buzz                                   |         | &check; |
 |   |               | 16 | 581. Shortest Unsorted Continuous Subarray       | &check; | &check; |
-|   |               | 17 | 647. Palindromic Substrings                      | &check; | &check; |
-|   |               | 18 | 763. Partition Labels                            | &check; | &check; |
+|   |               | 17 | 763. Partition Labels                            | &check; | &check; |
 | 3 | Binary Search | 1 | 4. Median of Two Sorted Arrays                    | &check; |         |
 |   |               | 2 | 33. Search in Rotated Sorted Array                |         | &check; |
 |   |               | 3 | 34. Search for a Range (First and Last Position)  |         | &check; |
@@ -62,12 +61,11 @@
 |   |               | 7 | 287. Find the Duplicate Number                    | &check; | &check; |
 |   |               | 8 | 300. Longest Increasing Subsequence               |         | &check; |
 |   |               | 9 | 378. Kth Smallest Element in a Sorted Matrix      |         | &check; |
-| 4 | Backtracking  | 1 | 5. Longest Palindromic Substring                  | &check; |         |
-|   |               | 2 | 17. Letter Combinations of a Phone Number         | &check; |         |
-|   |               | 3 | 39. Combination Sum                               | &check; |         |
-|   |               | 4 | 46. Permutations                                  | &check; |         |
-|   |               | 5 | 78. Subsets                                       | &check; |         |
-|   |               | 6 | 131. Palindrome Partitioning                      | &check; |         |
+| 4 | Backtracking  | 1 | 17. Letter Combinations of a Phone Number         | &check; |         |
+|   |               | 2 | 39. Combination Sum                               | &check; |         |
+|   |               | 3 | 46. Permutations                                  | &check; |         |
+|   |               | 4 | 78. Subsets                                       | &check; |         |
+|   |               | 5 | 131. Palindrome Partitioning                      | &check; |         |
 | 5 | Math Division | 1 | 7. Reverse Integer                                |         | &check; |
 |   |               | 2 | 8. String to Integer (atoi)                       |         | &check; |
 |   |               | 3 | 29. Divide Two Integers                           | &check; | &check; |
@@ -96,12 +94,15 @@
 |   |                         | 2 | 213. House Robber II                    | &check; | &check; |
 |   |                         | 3 | 121. Best Time to Buy and Sell Stock    | &check; | &check; |
 |   |                         | 4 | 309. Best Time to Buy and Sell Stock with Cooldown| &check; | &check; |
-| 10 | Two String Matching DP | 1 | 10 Regular Expression Matching          | &check; | &check; |
-|    |                        | 2 | 44. Wildcard Matching                   | &check; | &check; |
-|    |                        | 3 | 72. Edit Distance                       | &check; | &check; |
+| 10 | Two String Matching DP | 1 | 5. Longest Palindromic Substring        | &check; | &check; |
+|    |                        | 2 | 10 Regular Expression Matching          | &check; | &check; |
+|    |                        | 3 | 44. Wildcard Matching                   | &check; | &check; |
+|    |                        | 4 | 72. Edit Distance                       | &check; | &check; |
+|    |                        | 5 | 647. Palindromic Substrings             | &check; | &check; |
 | 11 | Two Direction DP       | 1 | 11. Container With Most Water           | &check; | &check; |
 |    |                        | 2 | 238. Product of Array Except Self       | &check; | &check; |
 | 12 | Merging Intervals DP   | 1 | 96. Unique Binary Search Trees          | &check; | &check; |
+|    |                        | 2 | 312. Burst Balloons                     | &check; | &check; |
 | 13 | Substring              | 1 | 14. Longest Common Prefix               | &check; | &check; |
 |    |                        | 2 | 28. Implement strStr()                  | &check; | &check; |
 |    |                        | 3 | 38. Count and Say                       | &check; | &check; |
