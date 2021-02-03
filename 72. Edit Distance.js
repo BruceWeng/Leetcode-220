@@ -132,11 +132,50 @@ function minDistance(word1, word2, i=0, j=0, memo={}) {
     return memo[key];
   }
 
-  const delete_cost = minDistance(word1, word2, i, j + 1, memo) + 1;
-  const insert_cost = minDistance(word1, word2, i + 1, j, memo) + 1;
+  const delete_cost = minDistance(word1, word2, i + 1, j, memo) + 1;
+  const insert_cost = minDistance(word1, word2, i, j + 1, memo) + 1;
   const update_cost = minDistance(word1, word2, i + 1, j + 1, memo) + 1;
   memo[key] = Math.min(delete_cost, insert_cost, update_cost);
   return memo[key];
+}
+
+console.log(minDistance('horse', 'ros')); // 3
+console.log(minDistance('intention', 'execution')); // 5
+
+/**
+ * 2020/02/02 Tabulation
+ * 1. Each cell in table stores min possible ways change from word1[0:i] to word2[0:j], and not include i and j.
+ * 2. minDistance('', '') -> 0: table[0][0] = 0
+ * 3. if word1[i] === word2[j], table[i+1][j+1] = table[i][j], no edit
+ * 4. a. delete: table[i+1][j] = min(table[i+1][j], table[i][j] + 1)
+ *    b. insert: table[i][j+1] = min(table[i][j+1], table[i][j] + 1)
+ *    c. replace: table[i+1][j+1] = min(table[i+1][j+1], table[i][j] + 1)
+ * 5. return table[m][n], m = word1.length, n = word2.length
+ * @param {string} word1 
+ * @param {string} word2 
+ * @return {number}
+ */
+function minDistance(word1, word2) {
+  const table = new Array(word1.length+1)
+  .fill()
+  .map(() => new Array(word2.length+1).fill(0));
+  const m = word1.length;
+  const n = word2.length;
+  for (let i = 0; i < m+1; i++) table[i][0] = i; // initialize word1 by only insert
+  for (let j = 0; j < n+1; j++) table[0][j] = j; // initialize word2 by only insert
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      if (word1[i] === word2[j]) {
+        table[i+1][j+1] = table[i][j];
+        continue;
+      }
+      const delete_cost = table[i+1][j];
+      const insert_cost = table[i][j+1];
+      const update_cost = table[i][j];
+      table[i+1][j+1] = Math.min(delete_cost, insert_cost, update_cost) + 1;
+    }
+  }
+  return table[m][n];
 }
 
 console.log(minDistance('horse', 'ros')); // 3
