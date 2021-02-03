@@ -182,6 +182,35 @@ console.log(minDistance('horse', 'ros')); // 3
 console.log(minDistance('intention', 'execution')); // 5
 
 /**
+ * @param {string} word1
+ * @param {string} word2
+ * @return {number}
+ */
+function minDistance(word1, word2) {
+  const m = word1.length, 
+        n = word2.length;
+  const table = new Array(m+1)
+  .fill()
+  .map(() => new Array(n+1).fill(0));
+  for (let i = 1; i < table.length; i++) table[i][0] = i;
+  for (let j = 1; j < table[0].length; j++) table[0][j] = j;
+  for (let i = 1; i < table.length; i++) {
+    for (let j = 1; j < table[0].length; j++) {
+      if (word1[i-1] === word2[j-1]) table[i][j] = table[i-1][j-1];
+      else {
+        const delete_cost = table[i-1][j] + 1;
+        const insert_cost = table[i][j-1] + 1;
+        const update_cost = table[i-1][j-1] + 1;
+        table[i][j] = Math.min(delete_cost, insert_cost, update_cost);
+      }
+    }
+  }
+  return table[m][n];
+}
+console.log(minDistance('horse', 'ros')); // 3
+console.log(minDistance('intention', 'execution')); // 5
+
+/**
  * DP Solution 12/12
  * Rolling Array Improvement: m stages -> 2 stages
  * Update different initial states in each stage while iteration
