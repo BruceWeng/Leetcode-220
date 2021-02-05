@@ -53,14 +53,41 @@
 |                |     |                         | 2 | 238. Product of Array Except Self       | &check; | &check; |
 |                | 1.7 | Merging Intervals DP    | 1 | 96. Unique Binary Search Trees          | &check; | &check; |
 |                |     |                         | 2 | 312. Burst Balloons                     | &check; | &check; |
-|                | 2.1 | Sliding Window          | 1 | 3. Longest Substring Without Repeating Characters |  | &check; |
+|                |  2  | Overlapping Interval    | 1 | 56. Merge Interval                      |         | &check; |
+|                |     |                         | 2 | 57. Insert Interval                     |         | &check; |
+|                |     |                         | 3 | 252. Meeting Rooms                      |         | &check; |
+|                |     |                         | 4 | 253. Meeting Rooms II                   |         | &check; |
+|                |     |                         | 5 | 435. Non-overlapping Intervals          |         | &check; |
+|                |     |                         | 6 | 986. Interval List Intersections        |         | &check; |
+|                |     |                         | 7 | 1229. Meeting Scheduler                 |         | &check; |
+|                |     |                 | 6 | 452. Minimum Number of Arrows to Burst Balloons |         | &check; |
+|                |  3  | Binary Search | 1 | 278. First Bad Version                            |         | &check; |
+|                |     |               | 2 | 69. Sqrt(x)                                       | &check; | &check; |
+|                |     |               | 3 | 35. Search Insert Position                        |         | &check; |
+|                |     |               | 4 | 1011. Capacity To Ship Packages Within D Days     |         | &check; |
+|                |     |               | 5 | 410. Split Array Largest Sum                      |         | &check; |
+|                |     |               | 6 | 875. Koko Eating Bananas                          |         | &check; |
+|                |     |               | 7 | 1482. Minimum Number of Days to Make m Bouquets   |         | &check; |
+|                |     |               | 8 | 668. Kth Smallest Number in Multiplication Table  |         | &check; |
+|                |     |               | 9 | 719. Find K-th Smallest Pair Distance             |         | &check; |
+|                |     |               | 10 | 1201. Ugly Number III                            |         | &check; |
+|                |     |               | 11 | 1283. Find the Smallest Divisor Given a Threshold|         | &check; |
+|                |     |               | 12 | 4. Median of Two Sorted Arrays                   | &check; |         |
+|                |     |               | 13 | 33. Search in Rotated Sorted Array               |         | &check; |
+|                |     |               | 14 | 34. Search for a Range (First and Last Position) |         | &check; |
+|                |     |               | 15 | 153. Minimum in Rotated Sorted Array             | &check; | &check; |
+|                |     |               | 16 | 162. Find Peak Element                           | &check; | &check; |
+|                |     |               | 17 | 287. Find the Duplicate Number                   | &check; | &check; |
+|                |     |               | 18 | 300. Longest Increasing Subsequence              |         | &check; |
+|                |     |               | 19 | 378. Kth Smallest Element in a Sorted Matrix     |         | &check; |
+|                | 4.1 | Sliding Window          | 1 | 3. Longest Substring Without Repeating Characters |  | &check; |
 |                |     |                         | 2 | 76. Minimum Window Substring            |         | &check; |
 |                |     |             | 3 | 340. Longest Substring with At Most K Distinct Characters |   | &check; |
 |                |     |           | 4 | 395. Longest Substring with At Least K Repeating Characters |   | &check; |
 |                |     |                         | 5 | 424. Longest Repeating Character Replacement |    | &check; |
 |                |     |                         | 6 | 438. Find All anagrams in a String      |         | &check; |
 |                |     |                         | 7 | 763. Partition Labels                   |         | &check; |
-|                | 2.2 | HashMap                 | 1 | 1. Two Sum                              |         | &check; |
+|                | 4.2 | HashMap                 | 1 | 1. Two Sum                              |         | &check; |
 |                |     |                         | 2 | 13. Roman to Integer                    |         | &check; |
 |                |     |                         | 3 | 49. Group Anagrams                      |         | &check; |
 |                |     |                         | 4 | 138. Copy List with Random Pointer      |         | &check; |
@@ -72,18 +99,9 @@
 |                |     |                         | 10 | 387. First Unique Character in a String|         | &check; |
 |                |     |                         | 11 | 454. 4Sum II                           |         | &check; |
 |                |     |                         | 12 | 560. subarray Sum Equals K             |         | &check; |
-|                | 2.3 | Prefix Sum              | 1 | 308. Range Sum Query 2D - Mutable       |         | &check; |
+|                | 4.3 | Prefix Sum              | 1 | 308. Range Sum Query 2D - Mutable       |         | &check; |
 |                |     |                         | 2 | 560. Subarray Sum Equals K              |         | &check; |
-|                |  3  | Binary Search | 1 | 4. Median of Two Sorted Arrays                    | &check; |         |
-|                |     |               | 2 | 33. Search in Rotated Sorted Array                |         | &check; |
-|                |     |               | 3 | 34. Search for a Range (First and Last Position)  |         | &check; |
-|                |     |               | 4 | 69. Sqrt(x)                                       | &check; | &check; |
-|                |     |               | 5 | 153. Minimum in Rotated Sorted Array              | &check; | &check; |
-|                |     |               | 6 | 162. Find Peak Element                            | &check; | &check; |
-|                |     |               | 7 | 287. Find the Duplicate Number                    | &check; | &check; |
-|                |     |               | 8 | 300. Longest Increasing Subsequence               |         | &check; |
-|                |     |               | 9 | 378. Kth Smallest Element in a Sorted Matrix      |         | &check; |
-|                |  4  | Pointers      | 1 | 15. 3Sum                                          |         | &check; |
+|                | 5.1 | Pointers      | 1 | 15. 3Sum                                          |         | &check; |
 |                |     |               | 2 | 26. Remove Duplicates from Sorted Array           |         | &check; |
 |                |     |               | 3 | 48. Rotate Image                                  |         | &check; |
 |                |     |               | 4 | 54. Spiral Matrix                                 |         | &check; |
@@ -100,10 +118,10 @@
 |                |     |               | 15 | 412. Fizz Buzz                                   |         | &check; |
 |                |     |               | 16 | 581. Shortest Unsorted Continuous Subarray       | &check; | &check; |
 |                |     |               | 17 | 763. Partition Labels                            | &check; | &check; |
-|                | 4.2 | Negative Mark | 1 | 448. Find All Numbers Disappeared in an Array     |         | &check; |
-|                | 4.3 | XOR           | 1 | 136. Single Number                                |         | &check; |
+|                | 5.2 | Negative Mark | 1 | 448. Find All Numbers Disappeared in an Array     |         | &check; |
+|                | 5.3 | XOR           | 1 | 136. Single Number                                |         | &check; |
 |                |     |               | 2 | 268. Missing Number                               |         | &check; |
-|                | 4.4 | Bit Manipulation | 1 | 190. Reverse Bits                              |         | &check; |
+|                | 5.4 | Bit Manipulation | 1 | 190. Reverse Bits                              |         | &check; |
 |                |     |               | 2 | 191. Number of 1 Bits                             |         | &check; |
 |                |     |               | 3 | 289. Game of Life                                 | &check; |         |
 |                |     |               | 4 | 338. Counting Bits                                |         | &check; |
@@ -173,12 +191,7 @@
 |                |     |                        | 3 | 380. Insert Delete GetRandom O(1)        |         | &check; |
 |                |     |                        | 4 | 448. Find All Numbers Disappeared in an Array |    | &check; |
 |                |2.4.2| 3 Way Reverse          | 1 | 189. Rotate Array                        |         | &check; |
-| D.Interval     |  1  | Interval               | 1 | 56. Merge Interval                       |         | &check; |
-|                |     |                        | 2 | 57. Insert Interval                      |         | &check; |
-|                |     |                        | 3 | 252. Meeting Rooms                       |         | &check; |
-|                |     |                        | 4 | 253. Meeting Rooms II                    |         | &check; |
-|                |     |                        | 5 | 435. Non-overlapping Intervals           |         | &check; |
-|                |  2  | Linked List            | 1 | 2. Add Two Numbers                       | &check; | &check; |
+| D.Linked List  |  1  | Linked List            | 1 | 2. Add Two Numbers                       | &check; | &check; |
 |                |     |                        | 2 | 19. Remove Nth Node From End of List     | &check; | &check; |
 |                |     |                        | 3 | 21. Merge Two Sorted Lists               | &check; | &check; |
 |                |     |                        | 4 | 141. Linked List Cycle                   | &check; | &check; |
@@ -192,7 +205,7 @@
 |                |     |                        | 12 | 285. Inorder Successor in BST           | &check; | &check; |
 |                |     |                        | 13 | 287. Find the Duplicate Number          | &check; | &check; |
 |                |     |                        | 14 | 328. Odd Even Linked List               | &check; | &check; |
-|                |  3  | Double Linked List     | 1 | 146. LRU Cache                           |         | &check; |
+|                |  2  | Double Linked List     | 1 | 146. LRU Cache                           |         | &check; |
 |                |     |                        | 2 | 460. LFU Cache                           |         | &check; |
 | E.BFS          |  1  | BFS                    | 1 | 45. Jump Game II                         | &check; | &check; |
 |                |     |                        | 2 | 226. Invert Binary Tree                  | &check; | &check; |
