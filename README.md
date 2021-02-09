@@ -53,14 +53,14 @@
 |                |     |                         | 2 | 238. Product of Array Except Self       | &check; | &check; |
 |                | 1.7 | Merging Intervals DP    | 1 | 96. Unique Binary Search Trees          | &check; | &check; |
 |                |     |                         | 2 | 312. Burst Balloons                     | &check; | &check; |
-|                |  2  | Overlapping Interval    | 1 | 56. Merge Interval                      |         | &check; |
+|                | 2.1 | Overlapping Interval    | 1 | 56. Merge Interval                      |         | &check; |
 |                |     |                         | 2 | 57. Insert Interval                     |         | &check; |
 |                |     |                         | 3 | 252. Meeting Rooms                      |         | &check; |
 |                |     |                         | 4 | 253. Meeting Rooms II                   |         | &check; |
-|                |     |                         | 5 | 435. Non-overlapping Intervals          |         | &check; |
-|                |     |                         | 6 | 986. Interval List Intersections        |         | &check; |
-|                |     |                         | 7 | 1229. Meeting Scheduler                 |         | &check; |
+|                | 2.2 | Max non-overlapping Interval | 5 | 435. Non-overlapping Intervals     |         | &check; |
 |                |     |                 | 6 | 452. Minimum Number of Arrows to Burst Balloons |         | &check; |
+|                | 2.3 | Intersection 2 pointers | 7 | 986. Interval List Intersections        |         | &check; |
+|                |     |                         | 8 | 1229. Meeting Scheduler                 |         | &check; |
 |                |  3  | Binary Search | 1 | 278. First Bad Version                            |         | &check; |
 |                |     |               | 2 | 69. Sqrt(x)                                       | &check; | &check; |
 |                |     |               | 3 | 35. Search Insert Position                        |         | &check; |
