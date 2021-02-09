@@ -8,6 +8,10 @@ console.log(eraseOverlapIntervals([[1,2],[1,2],[1,2]])); // 2
 console.log(eraseOverlapIntervals([[1,2],[2,3]])); // 0
 // the problem is the same as "Given a collection of intervals, 
 // find the maximum number of intervals that are non-overlapping." (the classic Greedy problem: Interval Scheduling).
+
+// If Sort by start: 
+// If there is one interval [0,24], will be the first interval after sorting and must be chosen.
+// And there are no other intervals can be chosen. It can't be maximum number of intervals.
 /**
  * @param {number[][]} intervals
  * @return {number}
