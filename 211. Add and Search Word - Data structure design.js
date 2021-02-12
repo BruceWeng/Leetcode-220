@@ -12,30 +12,26 @@ letters a-z or .. A . means it can represent any one letter.
  * search - O(n) - n is the total number of characters in all words
  */
 class TrieNode {
-  constructor() {
-    this.isWord = false;
-    this.children = {}; //(char, TrieNode)
-  }
+  isWord = false;
+  children = {}; // <key: charactor, value: TrieNode[]>
 }
 
 class WordDictionary {
-  constructor() {
-    this.root = new TrieNode();
-  }
+  root = new TrieNode();
   /**
    * Adds a word into the data structure. 
    * @param {string} word
    * @return {void}
    */
   addWord(word) {
-    let node = this.root;
+    let current = this.root;
     for (const char of word) {
-      if (!node.children[char]) {
-        node.children[char] = new TrieNode();
+      if (current.children[char] === undefined) {
+        current.children[char] = new TrieNode();
       }
-      node = node.children[char];
+      current = current.children[char];
     }
-    node.isWord = true;
+    current.isWord = true;
   }
   
   /**
@@ -43,32 +39,14 @@ class WordDictionary {
    * @param {string} word
    * @return {boolean}
    */
-  search(word) {
-    const stack = [{ i: 0, node: this.root }];
-    
-    while (stack.length) {
-      const { i, node } = stack.pop();
-
-      if (i === word.length) {
-        if (node.isWord) return true;
-        continue;
-      }
-      
-      const char = word[i];
-      if (char === '.') {
-        if (!node.children) continue;
-
-        for (const c in node.children) {
-          const sub = node.children[c];
-          stack.push({ i: i + 1, node: sub });
-        }
-      } else {
-        if (!node.children[char]) continue;
-
-        stack.push({ i: i + 1, node: node.children[char] });
+  search(word, i=0, node=this.root) {
+    if (i === word.length) return node.isWord;
+    if (word[i] === '.') {
+      for (const child in node.children) { // child: charater
+        if (this.search(word, i+1, node.children[child]) === true) return true;
       }
     }
-    
+    if (word[i] in node.children) return this.search(word, i+1, node.children[word[i]]);
     return false;
   }
 }
