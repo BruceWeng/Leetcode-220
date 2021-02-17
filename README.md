@@ -64,22 +64,23 @@
 |                |  3  | Binary Search | 1 | 278. First Bad Version                            |         | &check; |
 |                |     |               | 2 | 69. Sqrt(x)                                       | &check; | &check; |
 |                |     |               | 3 | 35. Search Insert Position                        |         | &check; |
-|                |     |               | 4 | 1011. Capacity To Ship Packages Within D Days     |         | &check; |
-|                |     |               | 5 | 410. Split Array Largest Sum                      |         | &check; |
-|                |     |               | 6 | 875. Koko Eating Bananas                          |         | &check; |
-|                |     |               | 7 | 1482. Minimum Number of Days to Make m Bouquets   |         | &check; |
-|                |     |               | 8 | 668. Kth Smallest Number in Multiplication Table  |         | &check; |
-|                |     |               | 9 | 719. Find K-th Smallest Pair Distance             |         | &check; |
-|                |     |               | 10 | 1201. Ugly Number III                            |         | &check; |
-|                |     |               | 11 | 1283. Find the Smallest Divisor Given a Threshold|         | &check; |
-|                |     |               | 12 | 4. Median of Two Sorted Arrays                   | &check; |         |
-|                |     |               | 13 | 33. Search in Rotated Sorted Array               |         | &check; |
-|                |     |               | 14 | 34. Search for a Range (First and Last Position) |         | &check; |
-|                |     |               | 15 | 153. Minimum in Rotated Sorted Array             | &check; | &check; |
-|                |     |               | 16 | 162. Find Peak Element                           | &check; | &check; |
-|                |     |               | 17 | 287. Find the Duplicate Number                   | &check; | &check; |
-|                |     |               | 18 | 300. Longest Increasing Subsequence              |         | &check; |
-|                |     |               | 19 | 378. Kth Smallest Element in a Sorted Matrix     |         | &check; |
+|                |     |               | 4 | 981. Time Based Key-Value Store                   |         | &check; |
+|                |     |               | 5 | 1011. Capacity To Ship Packages Within D Days     |         | &check; |
+|                |     |               | 6 | 410. Split Array Largest Sum                      |         | &check; |
+|                |     |               | 7 | 875. Koko Eating Bananas                          |         | &check; |
+|                |     |               | 8 | 1482. Minimum Number of Days to Make m Bouquets   |         | &check; |
+|                |     |               | 9 | 668. Kth Smallest Number in Multiplication Table  |         | &check; |
+|                |     |               | 10 | 719. Find K-th Smallest Pair Distance            |         | &check; |
+|                |     |               | 11 | 1201. Ugly Number III                            |         | &check; |
+|                |     |               | 12 | 1283. Find the Smallest Divisor Given a Threshold|         | &check; |
+|                |     |               | 13 | 4. Median of Two Sorted Arrays                   | &check; |         |
+|                |     |               | 14 | 33. Search in Rotated Sorted Array               |         | &check; |
+|                |     |               | 15 | 34. Search for a Range (First and Last Position) |         | &check; |
+|                |     |               | 16 | 153. Minimum in Rotated Sorted Array             | &check; | &check; |
+|                |     |               | 17 | 162. Find Peak Element                           | &check; | &check; |
+|                |     |               | 18 | 287. Find the Duplicate Number                   | &check; | &check; |
+|                |     |               | 19 | 300. Longest Increasing Subsequence              |         | &check; |
+|                |     |               | 20 | 378. Kth Smallest Element in a Sorted Matrix     |         | &check; |
 |                | 4.1 | Sliding Window          | 1 | 3. Longest Substring Without Repeating Characters |  | &check; |
 |                |     |                         | 2 | 76. Minimum Window Substring            |         | &check; |
 |                |     |             | 3 | 340. Longest Substring with At Most K Distinct Characters |   | &check; |
@@ -236,7 +237,6 @@
 |                |     |                        | 3 | 42. Trapping Rain Water                  | &check; | &check; |
 |                |     |                        | 4 | 84. Largest Rectangle Histogram          |         | &check; |
 |                |     |                        | 5 | 85. Maximal Rectangle                    |         | &check; |
-|                |     |                        | 6 | 907. Sum of Subarray Minimums            |         | &check; |
 | F.Others       |  1  | Math Division          | 1 | 7. Reverse Integer                       |         | &check; |
 |                |     |                        | 2 | 8. String to Integer (atoi)              |         | &check; |
 |                |     |                        | 3 | 29. Divide Two Integers                  | &check; | &check; |
