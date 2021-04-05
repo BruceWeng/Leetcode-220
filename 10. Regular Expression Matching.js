@@ -88,7 +88,7 @@ Output: false
  * @param {string} p
  * @return {boolean}
  */
-const isMatch = (s, p) => {
+function isMatch(s, p) {
   // empty s and p allowed
   if (s === undefined || p === undefined) return false;
 
@@ -109,25 +109,29 @@ const isMatch = (s, p) => {
 
   for (let i = 0; i < m; i += 1) {
     for (let j = 0; j < n; j += 1) {
-      // 4.1
-      if (p[j] === s[i]) states[i+1][j+1] = states[i][j];
-      // 4.2
-      else if (p[j] === ".") states[i+1][j+1] = states[i][j];
-      // 4.3
-      else if (p[j] === "*") {
-        // 4.3.1
-        if (p[j-1] !== s[i] && p[j-1] !== ".") states[i+1][j+1] = states[i+1][j-1];
-        // 4.3.2
-        else if (p[j-1] === s[i] || p[j-1] === ".") {
-          // either 3 sub cases is true, states[i][j] is true
-          // a. single prev char: states[i][j-1]
-          // b. multiple prev char: states[i-1][j]
-          // c. empty current char: states[i][j-2]
-          states[i+1][j+1] = states[i+1][j] || states[i][j+1] || states[i+1][j-1];
-        }
-      }
+      states[i+1][j+1] = nextValue(s, p, i, j, states)
     }
   }
 
   return states[m][n];
 };
+
+function nextValue(s, p, i, j, states) {
+  // 4.1
+  if (p[j] === s[i]) return states[i][j]
+  // 4.2
+  if (p[j] === ".") return states[i][j]
+  let A = p[j] === "*"
+  let B = p[j-1] === s[i]
+  let C = p[j-1] === "."
+  // 4.3.1
+  if (A && (!B && !C)) return states[i+1][j-1]
+  // 4.3.2
+  // either 3 sub cases is true, states[i][j] is true
+  // a. single prev char: states[i][j-1]
+  // b. multiple prev char: states[i-1][j]
+  // c. empty current char: states[i][j-2]
+  if (A && (B || C)) return states[i+1][j] || states[i][j+1] || states[i+1][j-1]
+  // default
+  return states[i+1][j+1]
+}
