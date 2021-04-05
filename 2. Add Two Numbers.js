@@ -37,20 +37,7 @@ function addTwoNumbers(l1, l2) {
     let carry = 0;
 
     while (l1 !== null || l2 !== null) {
-        if (l1 !== null) {
-            val1 = l1.val;
-            l1 = l1.next;
-        } else {
-            val1 = 0;
-        }
-
-        if (l2 !== null) {
-            val2 = l2.val;
-            l2 = l2.next;
-        } else {
-            val2 = 0;
-        }
-
+        [l1, l2, val1, val2] = nextValue(l1, l2)
         let sum = val1 + val2 + carry;
         current.next = new ListNode(sum % 10);
         carry = Math.floor(sum / 10);
@@ -62,4 +49,11 @@ function addTwoNumbers(l1, l2) {
     }
 
     return dummy.next;
+}
+
+function nextValue(l1, l2) {
+    if (l1 == null && l2 == null) return [l1, l2, 0, 0]
+    if (l1 !== null && l2 == null) return [l1.next, l2, l1.val, 0]
+    if (l1 == null && l2 !== null) return [l1, l2.next, 0, l2.val]
+    if (l1 !== null && l2 !== null) return [l1.next, l2.next, l1.val, l2.val]
 }
