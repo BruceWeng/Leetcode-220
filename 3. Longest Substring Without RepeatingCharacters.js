@@ -88,16 +88,17 @@ const lengthOfLongestSubstring = (s) => {
   let set = new Set();
   
   while (end < s.length) {
-    if (!set.has(s[end])) {
-      set.add(s[end]);
-      end += 1;
-      result = Math.max(result, set.size);
-    }
-    else {
-      set.delete(s[start]);
-      start += 1;
-    }
+    [start, end, result] = nextRange(start, end, result, s, set)
   }
 
   return result;
 };
+
+function nextRange(start, end, result, s, set) {
+  if (!set.has(s[end])) {
+    set.add(s[end])
+    return [start, end + 1, Math.max(result, set.size)]
+  }
+  set.delete(s[start])
+  return [start + 1, end, result]
+}
