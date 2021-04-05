@@ -100,15 +100,27 @@ const isValid = (s) => {
  */
 var isValid = function(s) {
     if (s.length === 0) return true;
-    
+
     let stack = [];
     for (let c of s) {
-      if (c === "{") stack.push("}");
-      else if (c === "[") stack.push("]");
-      else if (c === "(") stack.push(")");
-      else if (stack.length !== 0 && stack[stack.length - 1] === c) stack.pop(); // match found
-      else return false; // no match open parentheses to current close parentheses
+        if (c === "{") {
+            stack.push("}");
+            continue
+        }
+        if (c === "[") {
+            stack.push("]");
+            continue
+        }
+        if (c === "(") {
+            stack.push(")");
+            continue
+        }
+        if (stack.length !== 0 && stack[stack.length - 1] === c) {
+            stack.pop(); // match found
+            continue
+        }
+        return false; // no match open parentheses to current close parentheses
     }
-    
+
     return stack.length === 0; // if there is any open parentheses left, return false
-  };
+};
