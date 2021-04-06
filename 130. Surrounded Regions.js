@@ -54,7 +54,7 @@ var solve = function(board) {
   for (let i = 0; i < row; i += 1) {
     for (let j = 0; j < col; j += 1) {
       if (board[i][j] === 'O') board[i][j] = 'X';
-      else if (board[i][j] === '*') board[i][j] = 'O';
+      if (board[i][j] === '*') board[i][j] = 'O';
     }
   }
 };
@@ -207,7 +207,7 @@ const solve = (board) => {
   for (let i = 0; i < row; i += 1) {
     for (let j = 0; j < col; j += 1) {
       if (board[i][j] === 'O') board[i][j] = 'X';
-      else if (board[i][j] === '*') board[i][j] = 'O';
+      if (board[i][j] === '*') board[i][j] = 'O';
     }
   }
 }
