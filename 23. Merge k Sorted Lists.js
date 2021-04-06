@@ -36,11 +36,10 @@ Output: 1->1->2->3->4->4->5->6
  * @return {ListNode}
  */
 function mergeKLists(lists) {
-    if (lists.length === 0) {
-        return null;
-    }
-
-    return mergeHelper(lists, 0, lists.length - 1);
+	if (lists.length === 0) {
+		return null;
+	}
+	return mergeHelper(lists, 0, lists.length - 1);
 }
 
 /**
@@ -50,14 +49,13 @@ function mergeKLists(lists) {
  * @return {ListNode}
  */
 function mergeHelper(lists, start, end) {
-    if (start === end) {
-        return lists[start];
-    }
-
-    let mid = start + Math.floor((end - start) / 2);
-    let left = mergeHelper(lists, start, mid);
-    let right = mergeHelper(lists, mid + 1, end);
-    return merge(left, right);
+	if (start === end) {
+		return lists[start];
+	}
+	let mid = start + Math.floor((end - start) / 2);
+	let left = mergeHelper(lists, start, mid);
+	let right = mergeHelper(lists, mid + 1, end);
+	return merge(left, right);
 }
 
 /**
@@ -66,24 +64,16 @@ function mergeHelper(lists, start, end) {
 * @return {ListNode}
 */
 function merge(head1, head2) {
-    let result = new ListNode(0);
-    let curr = result;
-    while (head1 !== null && head2 !== null) {
-        if (head1.val < head2.val) {
-            curr.next = head1;
-            head1 = head1.next;
-        } else {
-            curr.next = head2;
-            head2 = head2.next;
-        }
-        curr = curr.next;
-    }
-
-    if (head1 !== null) {
-        curr.next = head1;
-    } else {
-        curr.next = head2;
-    }
-
-    return result.next;
+	let result = new ListNode(0);
+	let curr = result;
+	while (head1 !== null && head2 !== null) {
+		[head1, head2, curr.next, curr] = nextValue(head1, head2)
+	}
+	curr.next = (head1 !== null) ? head1 : head2
+	return result.next;
+}
+  
+function nextValue(head1, head2) {
+	if (head1.val < head2.val) return [head1.next, head2, head1, head1]
+	return [head1, head2.next, head2, head2]
 }
