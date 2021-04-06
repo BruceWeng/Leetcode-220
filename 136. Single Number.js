@@ -24,16 +24,17 @@ var singleNumber = function(nums) {
  * @return {number}
  */
 let singleNumber = function(nums) {
-    let map = {};
-    for (let num of nums) {
-      if (num in map) map[num] += 1;
-      else map[num] = 1;
-    }
-  
-    for (let key in map) {
-      if (map[key] === 1) return key;
-    }
-  };
+  let map = {};
+  for (let num of nums) {
+    map[num] = (num in map) 
+      ? map[num] + 1
+      : 1;
+  }
+
+  for (let key in map) {
+    if (map[key] === 1) return key;
+  }
+};
   
   console.log(singleNumber([2,2,1])); // 1
   console.log(singleNumber([4,1,2,1,2])); // 4
