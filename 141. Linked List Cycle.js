@@ -10,24 +10,14 @@
  * @param {ListNode} head
  * @return {boolean}
  */
-var hasCycle = function(head) {
-    if (head === null || head.next === null) {
-        return false;
-    }
-
-    let slow = head;
-    let fast = head.next;
-    while(fast && slow) {
-        if (slow.val === fast.val) {
-            return true;
-        }
-        fast = fast.next;
-        if (fast === null) {
-            return false;
-        } else {
-            fast = fast.next;
-        }
-        slow = slow.next;
+function hasCycle(head) {
+    if(head == null) return false;
+    let walker = head;
+    let runner = head;
+    while(runner.next!==null && runner.next.next!==null) {
+        walker = walker.next;
+        runner = runner.next.next;
+        if(walker===runner) return true;
     }
     return false;
-};
+}
