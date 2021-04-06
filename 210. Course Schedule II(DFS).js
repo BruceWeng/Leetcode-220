@@ -34,11 +34,11 @@
      for (let edges of prerequisites) {
        if (graph.has(edges[0])) {
          graph.get(edges[0]).push(edges[1]);
-       } else {
-         let parent = new Array();
-         parent.push(edges[1]);
-         graph.set(edges[0], parent);
+         continue
        }
+       let parent = new Array();
+       parent.push(edges[1]);
+       graph.set(edges[0], parent);
      }
 
      for (let i = 0; i < numCourses; i++) {
