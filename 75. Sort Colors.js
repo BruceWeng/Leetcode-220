@@ -55,22 +55,23 @@ const sortColors = (nums) => {
   let two = nums.length - 1; // inclusive
   let i = 0;
   while (i <= two) { // i has to <= two since two and i are possible be equal and we miss one swap
-    // Find first non-one position
-    if (nums[i] === 1) i += 1;
-    // if nums[i] === 2, move it to last two position
-    else if (nums[i] === 2) {
-      swap(nums, i, two);
-      two -= 1;
-    } 
-    // if nums[i] === 0, move it to first zero position
-    else {
-      swap(nums, i, zero);
-      zero += 1
-      i += 1 // Increment i to find next one
-    }
+    [zero, two, i] = nextValue(nums, zero, two, i)
   }
 
   return nums;
+}
+
+function nextValue(nums, zero, two, i) {
+  // Find first non-one position
+  if (nums[i] === 1) return [zero, two, i + 1]
+  // if nums[i] === 2, move it to last two position
+  if (nums[i] === 2) {
+    swap(nums, i, two)
+    return [zero, two - 1, i]
+  }
+  // if nums[i] === 0, move it to first zero position
+  swap(nums, i, zero)
+  return [zero + 1, two, i + 1] // Increment i to find next one
 }
 
 const swap = (nums, i, j) => {
