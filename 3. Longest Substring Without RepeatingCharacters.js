@@ -73,7 +73,7 @@ var lengthOfLongestSubstring = function(s) {
  * if nums[end] not in set:
  *   a. add it in and increment end
  *   b. update result = max(result, set.size) <- Awesome move!
- * else: remove nums[start] from set, start += 1
+ * remove nums[start] from set, start += 1
  * 
  * return result
  * 

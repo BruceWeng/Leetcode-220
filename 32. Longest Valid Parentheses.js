@@ -18,8 +18,8 @@ Explanation: The longest valid parentheses substring is "()()"
  * Stack SOP:
  * 1. Iterate parentheses
  * 2. Push index of '(': if (char === '(') stack.push(index)
- * 3. Match Found: else if (stack.length !== 0 && stack[stack.length-1] === '(') stack.pop()
- * 4. Push index of ')': else stack.push(index)
+ * 3. Match Found: if (stack.length !== 0 && stack[stack.length-1] === '(') stack.pop()
+ * 4. Push index of ')': stack.push(index)
  * 
  * 1. Scan the string from beginning to end
  * 2. Do Stack SOP
