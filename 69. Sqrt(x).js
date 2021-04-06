@@ -17,16 +17,13 @@ var mySqrt = function(x) {
 
     while (low + 1 < high) {
         let mid = low + Math.floor((high - low) / 2);
-        if (mid * mid <= x) {
-            low = mid;
-        } else {
-            high = mid;
-        }
+        [low, high] = nextValue(x, low, high, mid)
     }
 
-    if (low * low <= x) {
-        return low;
-    } else {
-        return high;
-    }
+    return (low * low <= x) ? low : high
 };
+
+function nextValue(x, low, high, mid) {
+    if (mid * mid <= x) return [mid, high]
+    return [low, mid]
+}
