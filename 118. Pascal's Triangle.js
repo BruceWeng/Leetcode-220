@@ -47,8 +47,11 @@ var generate = function(numRows) {
     let newRow = [];
     let lastRow = result[result.length-1];
     for (let j = 0; j < lastRow.length + 1; j += 1) {
-      if (j === 0 || j === lastRow.length) newRow.push(1);
-      else newRow.push(result[numRow-1][j-1] + result[numRow-1][j]);
+      if (j === 0 || j === lastRow.length) {
+        newRow.push(1);
+        continue
+      }
+      newRow.push(result[numRow-1][j-1] + result[numRow-1][j]);
     }
     result.push(newRow);
   }
