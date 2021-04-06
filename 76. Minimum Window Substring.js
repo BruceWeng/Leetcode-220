@@ -20,22 +20,21 @@ var minWindow = function(s, t) {
 
   let end = 0;
   let start = 0;
-  let map = new Map();
+  let map = {};
   for (let char of t) {
-    if (!map.has(char)) map.set(char, 1);
-    else map.set(char, map.get(char) + 1);
+    map[char] = (!(char in map)) 
+      ? 1 
+      : map[char] + 1;
   }
 
-  let counter = map.size;
+  let counter = Object.keys(map).length;
   let length = s.length + 1;
   let head = 0;
 
   while (end < s.length) {
     let endChar = s[end];
-    if (map.has(endChar)) {
-      map.set(endChar, map.get(endChar) - 1);
-      if (map.get(endChar) === 0) counter -= 1;
-    }
+    if (endChar in map) map[endChar] = map[endChar] - 1;
+    if (endChar in map && map[endChar] === 0) counter -= 1
 
     // end += 1; not to increase end here
     // end only moves when find at least one candidate answer
@@ -46,8 +45,8 @@ var minWindow = function(s, t) {
         head = start;
       }
       let startChar = s[start];
-      map.set(startChar, map.get(startChar) + 1);
-      if (map.get(startChar) > 0) counter += 1;
+      map[startChar] += 1;
+      if (map[startChar] > 0) counter += 1;
 
       start += 1;
     }
