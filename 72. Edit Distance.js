@@ -72,7 +72,7 @@ console.log(minDistance(test1, test2)); // 5
  *                      edist(Ax, B) + 1, Delete
  *                      edist(A, By) + 1 Insert
  *                    ) 
- * delta(x, y) = 0 if x = y, else 1
+ * delta(x, y) = (x = y) ? 0 : 1
  * 
  * T: O( 3^min(len(word1), len(word2)) )
  * S: O(min(len(word1), len(word2))) , (depth of call stack)
@@ -197,7 +197,7 @@ function minDistance(word1, word2) {
   for (let i = 1; i < table.length; i++) {
     for (let j = 1; j < table[0].length; j++) {
       if (word1[i-1] === word2[j-1]) table[i][j] = table[i-1][j-1];
-      else {
+      if (word[i-1] === word2[j-1]) {
         const delete_cost = table[i-1][j] + 1;
         const insert_cost = table[i][j-1] + 1;
         const update_cost = table[i-1][j-1] + 1;
@@ -270,11 +270,9 @@ var minDistance = function (word1, word2) {
 
   for (let i = 1; i < stages.length; i += 1) {
     for (let j = 1; j < stages[i].length; j += 1) {
-      if (word1[i - 1] !== word2[j - 1]) {
-        stages[i][j] = stages[i][j] = Math.min(stages[i - 1][j - 1], stages[i - 1][j], stages[i][j - 1]) + 1;
-      } else {
-        stages[i][j] = stages[i - 1][j - 1];
-      }
+      stages[i][j] = (word1[i - 1] === word2[j - 1])
+        ? stages[i - 1][j - 1]
+        : Math.min(stages[i - 1][j - 1], stages[i - 1][j], stages[i][j - 1]) + 1
     }
   }
 
