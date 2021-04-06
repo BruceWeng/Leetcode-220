@@ -147,7 +147,7 @@ const findConnected = (grid, i, j) => {
 
 const find = (groups, index) => {
   // isolated
-  if (groups[index] === index) return index;
+  if(groups[index]===index) return index;
 
   // group
   return find(groups, groups[index]);
@@ -155,13 +155,13 @@ const find = (groups, index) => {
 
 const union = (groups, i1, j1, i2, j2, col) => {
   // map matrix to array
-  let index1 = i1 * col + j1;
-  let index2 = i2 * col + j2;
+  let index1 = i1*col+j1;
+  let index2 = i2*col+j2;
   let root1 = find(groups, index1);
   let root2 = find(groups, index2);
 
   // Already unioned
-  if (root1 === root2) return;
+  if(root1===root2) return;
 
   // Change root2 to root1
   groups[root2] = root1;
@@ -172,42 +172,40 @@ const union = (groups, i1, j1, i2, j2, col) => {
  * @return {number}
  */
 var numIslands3 = function(grid) {
-  if (grid === undefined || grid.length === 0 || grid[0].length === 0) return 0;
+  if(grid===undefined || grid.length===0 || grid[0].length===0) return 0;
 
   let m = grid.length;
   let n = grid[0].length;
 
   let groups = [];
-  for (let i = 0; i < m*n; i += 1) {
-    groups.push(i);
-  }
+  for(let i=0; i<m*n; i++) groups.push(i);
 
   // Mark roots
-  for (let i = 0; i < m; i += 1) {
-    for (let j = 0; j < n; j += 1) {
-      if (grid[i][j] === '1') groups[i*n+j] = i * n + j;
-      else groups[i*n+j] = -1; // Cell 0, not in any groups
+  for(let i=0; i<m; i++) {
+    for(let j=0; j<n; j++) {
+      groups[i*n+j] = (grid[i][j]==='1')
+        ? i * n + j
+        : -1; // Cell 0, not in any groups
     }
   }
 
   // Union right and down cells
-  for (let i = 0; i < m; i += 1) {
-    for (let j = 0; j < n; j += 1) {
-      if (grid[i][j] === '1') {
+  for(let i=0; i<m; i++) {
+    for(let j=0; j<n; j++) {
+      if(grid[i][j]==='1') {
         // Union right cell
-        if (j+1 < n && grid[i][j+1] === '1') union(groups, i, j, i, j+1, n);
+        if(j+1<n && grid[i][j+1]==='1') union(groups, i, j, i, j+1, n);
         // Union down cell
-        if (i+1 < m && grid[i+1][j] === '1') union(groups, i, j, i+1, j, n);
+        if(i+1<m && grid[i+1][j]==='1') union(groups, i, j, i+1, j, n);
       }
     }
   }
 
   let result = 0;
   // Count groups
-  for (let i = 0; i < groups.length; i += 1) {
-    if (groups[i] === i) result += 1;
+  for(let i=0; i<groups.length; i++) {
+    if(groups[i]===i) result++;
   }
-
   return result;
 };
 
