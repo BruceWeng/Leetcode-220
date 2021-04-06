@@ -9,26 +9,19 @@
  * @return {number}
  */
 var myPow = function(x, n) {
-  if (n === 0) {
-      return 1;
-  }
+  if (n === 0) return 1;
 
-  if (n === 1) {
-      return x;
-  }
+  if (n === 1) return x;
 
   let isNegative = false;
   if (n < 0) {
-      n *= -1;
-      isNegative = true;
+    n *= -1;
+    isNegative = true;
   }
 
   let sub = myPow(x, Math.floor(n / 2));
   let edge = myPow(x, n % 2);
-  if (isNegative) {
-      return 1.0 / (sub * sub * edge);
-  } else {
-        return sub * sub * edge;
-  }
-
+  return (isNegative) 
+    ? 1.0 / (sub * sub * edge)
+    : sub * sub * edge;
 };
