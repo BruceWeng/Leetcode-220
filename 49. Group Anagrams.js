@@ -35,8 +35,11 @@ var groupAnagrams = function(strs) {
     // Inplace sort strArr
     strArr.sort();
     let key = strArr.join("");
-    if (map.has(key)) map.get(key).push(str);
-    else map.set(key, [str]);
+    if (map.has(key)) {
+      map.get(key).push(str);
+      continue
+    }
+    map.set(key, [str]);
   }
   
   let result = [];
