@@ -95,8 +95,11 @@ const isMatch = (s, p) => {
   
   // 3.
   for (let j = 0; j < n; j += 1) {
-    if (p[j] === "*") states[0][j+1] = true;
-    else break;
+    if (p[j] === "*") {
+      states[0][j+1] = true;
+      continue
+    }
+    break;
   }
 
   // 4.
@@ -105,9 +108,9 @@ const isMatch = (s, p) => {
       // 4.1
       if (p[j] === s[i]) states[i+1][j+1] = states[i][j];
       // 4.2
-      else if (p[j] === "?") states[i+1][j+1] = states[i][j];
+      if (p[j] === "?") states[i+1][j+1] = states[i][j];
       // 4.3
-      else if (p[j] === "*") {
+      if (p[j] === "*") {
         // 4.3.1 "*" as empty char
         // 4.3.2 "*" as one or multiple char
         states[i+1][j+1] = states[i+1][j] || states[i][j+1];
