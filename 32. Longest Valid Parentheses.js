@@ -42,9 +42,15 @@ var longestValidParentheses = function(s) {
   
   let stack = [];
   for (let i = 0; i < s.length; i += 1) {
-    if (s[i] === '(') stack.push(i);
-    else if (stack.length !== 0 && s[stack[stack.length - 1]] === '(') stack.pop();
-    else stack.push(i);
+    if (s[i] === '(') {
+      stack.push(i);
+      continue
+    }
+    if (stack.length !== 0 && s[stack[stack.length - 1]] === '(') {
+      stack.pop();
+      continue
+    }
+    stack.push(i);
   }
   
   if (stack.length === 0) return s.length;
