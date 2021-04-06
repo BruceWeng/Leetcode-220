@@ -51,11 +51,9 @@ var findOrder = function(numCourses, prerequisites) {
          }
        }
      }
-     if (noPreNum !== numCourses) {
-        return [];
-     } else {
-        return result;
-     }
+     return (noPreNum!==numCourses) 
+      ? []
+      : result;
 };
 
 /**
