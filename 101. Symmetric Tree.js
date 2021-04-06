@@ -53,12 +53,9 @@ function isSymmetric(root) {
       if (head === null) {
         level.push(null);
         continue;
-      } else {
-        level.push(head.val);
       }
-
+      level.push(head.val);
       queue.push(head.left);
-
       queue.push(head.right);
     }
 
