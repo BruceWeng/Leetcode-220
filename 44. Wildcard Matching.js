@@ -55,7 +55,7 @@ Output: false
  * 3. Initiate initial states for 1st row:
  *    To handle s = "adceb", p = "*a*b", states at all (and only) leading "*" should be true
  *    if p[j] === "*": states[0][j] = true
- *    else break
+ *    break
  * 
  * 4. 3 cases:
  *    4.1 p[j] === s[i]: states not change, copy from previous substring
