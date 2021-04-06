@@ -34,7 +34,8 @@ var merge = function (intervals) {
   for (let i = 1; i < intervals.length; i++) {
     if (prevInterval[1] >= intervals[i][0]) {
       prevInterval[1] = Math.max(prevInterval[1], intervals[i][1]);
-    } else {
+    }
+    if (prevInterval[1] < intervals[i][0]) {      
       result.push(prevInterval);
       prevInterval = intervals[i];
     }
