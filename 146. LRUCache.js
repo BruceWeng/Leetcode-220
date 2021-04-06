@@ -53,12 +53,11 @@ var LRUCache = function(capacity) {
  */
 LRUCache.prototype.get = function(key) {
   let node = this.map.get(key);
-  if (typeof node !== 'undefined') {
+  if(node!==undefined) {
     this.moveToHead(node);
     return node.val;
-  } else {
-    return -1;
   }
+  return -1;
 };
 
 /**
@@ -68,16 +67,16 @@ LRUCache.prototype.get = function(key) {
  */
 LRUCache.prototype.set = function(key, value) {
   let node = this.map.get(key);
-  if (typeof node === 'undefined') {
-    node = new ListNode(key, value);
-    this.attachToHead(node);
-    this.size++;
-  } else {
+  if(node!==undefined) {
     node.val = value;
     this.moveToHead(node);
   }
-
-  if (this.size > this.capacity) {
+  if(node===undefined) {
+    node = new ListNode(key, value);
+    this.attachToHead(node);
+    this.size++;
+  } 
+  if(this.size > this.capacity) {
     this.removeLast();
     this.size--;
   }
