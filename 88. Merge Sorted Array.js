@@ -37,12 +37,11 @@ var merge = function(nums1, m, nums2, n) {
       nums1[insert_pos] = nums1[i];
       i -= 1;
       insert_pos -= 1;
+      continue
     }
-    else {
-      nums1[insert_pos] = nums2[j];
-      j -= 1;
-      insert_pos -= 1;
-    }
+    nums1[insert_pos] = nums2[j];
+    j -= 1;
+    insert_pos -= 1;
   }
   
   while (j >= 0) {
