@@ -121,3 +121,48 @@ var search = function(nums, target) {
   // handle target not found case
   return -1;
 };
+
+/**
+ * Update: 2021/04/05
+ */
+// A >> 1 == Math.floor(A / 2)
+function search(nums, target) {
+  if (nums.length === 0) return -1;
+  let start = 0;
+  let end = nums.length - 1;
+  if (target < nums[0]) {
+    // right part
+    while (start + 1 < end) {
+      let mid = start + ((end - start) >> 1);
+      if (nums[mid] === target) return mid;
+      [start, end] = nextRightRange({nums, target, start, end, mid})
+    }
+  } 
+  if (target >= nums[0]) {
+    // left part
+    while (start + 1 < end) {
+      let mid = start + ((end - start) >> 1);
+      if (nums[mid] === target) return mid;
+      [start, end] = nextLeftRange({nums, target, start, end, mid})
+    }
+  }
+  if (nums[start] === target) return start;
+  if (nums[end] === target) return end;
+  return -1;
+}
+
+function nextRightRange({nums, target, start, end, mid}) {
+  let A = nums[mid] > target
+  let B = nums[mid] > nums[0]
+  if (A && B) return [mid + 1, end]
+  if (A && !B) return [start, mid - 1]
+  if (!A) return [mid + 1, end]
+}
+
+function nextLeftRange({nums, target, start, end, mid}) {
+  let A = nums[mid] < nums[0]
+  let B = nums[mid] > target
+  if (A) return [start, mid - 1]
+  if (!A && B) return [start, mid - 1]
+  if (!A && !B) return [mid + 1, end]
+}
