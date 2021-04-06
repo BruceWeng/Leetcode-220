@@ -12,17 +12,24 @@ console.log(insert([[1,5]], [2,7])); // [[1,7]]
 // 2. find all the right intervals
 // 3. find merged interval start(smallest) and end(largest)
 function insert (intervals, newInterval) {
-  const left = [],
-        right = [];
+  let left = [],
+      right = [];
   let start = newInterval[0],
       end = newInterval[1];
   for (let i = 0; i < intervals.length; i += 1) {
-    if (intervals[i][1] < start) left.push(intervals[i]);
-    else if (intervals[i][0] > end) right.push(intervals[i]);
-    else {
-      start = Math.min(start, intervals[i][0]);
-      end = Math.max(end, intervals[i][1]);
-    }
+    [left, right, start, end] = nextRange({intervals, left, right, start, end, i})
   }
   return [...left, [start, end], ...right];
+}
+
+function nextRange({intervals, left, right, start, end, i}) {
+  if (intervals[i][1] < start) {
+    left.push(intervals[i])
+    return [left, right, start, end]
+  }
+  if (intervals[i][0] > end) {
+    right.push(intervals[i])
+    return [left, right, start, end]
+  }
+  return [left, right, Math.min(start, intervals[i][0]), Math.max(end, intervals[i][1])]
 }
