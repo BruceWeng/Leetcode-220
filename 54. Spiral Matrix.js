@@ -19,13 +19,12 @@ var spiralOrder = function(matrix) {
       for (let i = 0; i < col; i++) {
         result.push(matrix[x][y++]);
       }
-
       break;
-    } else if (col === 1) {
+    } 
+    if (col === 1) {
       for (let i = 0; i < row; i++) {
         result.push(matrix[x++][y]);
       }
-
       break;
     }
     for (let i = 0; i < col - 1; i++) {
@@ -102,7 +101,7 @@ var spiralOrder = function(matrix) {
       break;
     } 
     // Corner case: one col
-    else if (n === 1) {
+    if (n === 1) {
       for (let i = 0; i < m; i += 1) {
         result.push(matrix[x][y]);
         x += 1;
