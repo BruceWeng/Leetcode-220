@@ -31,21 +31,17 @@ Given target = 20, return false.
  * @return {boolean}
  */
 var searchMatrix = function(matrix, target) {
-  if (matrix === undefined || target === undefined) return false;
-  
-  if (matrix.length === 0 || matrix[0].length === 0) return false;
+  if(matrix===undefined || target===undefined) return false;
+  if(matrix.length===0 || matrix[0].length===0) return false;
   
   let row = 0;
-  let col = matrix[0].length - 1;
+  let col = matrix[0].length-1;
   
-  while (row < matrix.length && col >= 0) {
+  while(row<matrix.length && col>=0) {
     let mid_value = matrix[row][col];
-    
-    if (mid_value === target) return true;
-    
-    if (mid_value < target) row += 1;
-    
-    else col -= 1;
+    if(mid_value===target) return true;
+    if(mid_value<target) row += 1;
+    if(mid_value>target) col -= 1;
   }
   
   return false;
