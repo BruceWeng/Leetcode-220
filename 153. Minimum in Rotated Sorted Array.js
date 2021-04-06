@@ -8,23 +8,22 @@
  */
 var findMin = function(nums) {
     if (nums === null || nums.length === 0) {
-        return null;
+      return null;
     }
-
+  
     var start = 0;
     var end = nums.length - 1;
     while(start + 1 < end) {
-        var mid = start + Math.floor((end - start) / 2);
-        if (nums[mid] <= nums[end]) {
-            end = mid;
-        } else {
-            start = mid;
-        }
+      var mid = start + ((end - start) >> 1);
+      [start, end] = nextRange(start, end, mid, nums)
     }
-
-    if (nums[start] <= nums[end]) {
-        return nums[start];
-    } else {
-        return nums[end];
-    }
-};
+  
+    return (nums[start] <= nums[end]) 
+      ? nums[start]
+      : nums[end];
+  };
+  
+  function nextRange(start, end, mid, nums) {
+    if (nums[mid] <= nums[end]) return [start, mid]
+    return [mid, end]
+  }
