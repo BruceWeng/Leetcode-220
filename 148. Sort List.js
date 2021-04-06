@@ -31,7 +31,7 @@ Output: -1->0->3->4->5
  * @return {ListNode}
  */
 var sortList = function(head) {
-    if (head === null || head.next === null) {
+    if (head===null || head.next===null) {
         return head;
     }
 
@@ -49,7 +49,7 @@ var sortList = function(head) {
 function findMiddle(head) {
     let slow = head;
     let fast = head.next;
-    while (fast !== null && fast.next !== null) {
+    while (fast!==null && fast.next!==null) {
         slow = slow.next;
         fast = fast.next.next;
     }
@@ -64,22 +64,14 @@ function findMiddle(head) {
 function merge(head1, head2) {
     let result = new ListNode(0);
     let curr = result;
-    while (head1 !== null && head2 !== null) {
-        if (head1.val < head2.val) {
-            curr.next = head1;
-            head1 = head1.next;
-        } else {
-            curr.next = head2;
-            head2 = head2.next;
-        }
-        curr = curr.next;
+    while (head1!==null && head2!==null) {
+        [head1, head2, curr.next, curr] = nextValue(head1, head2)
     }
-
-    if (head1 !== null) {
-        curr.next = head1;
-    } else {
-        curr.next = head2;
-    }
-
+    curr.next = (head1!==null) ? head1 : head2
     return result.next;
+  }
+  
+function nextValue(head1, head2) {
+    if(head1.val < head2.val) return [head1.next, head2, head1, head1]
+    return [head1, head2.next, head2, head2]
 }
