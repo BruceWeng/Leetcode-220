@@ -31,19 +31,17 @@ function maxPoints(points) {
   let result = 0;
   for (let i = 0; i < len; i++) {
     let same_points = 1, max_points = 0;
-    let map = new Map(); // ([dX/d, dY/d]. count)
+    let map = {}; // ([dX/d, dY/d]. count)
     for (let j = i + 1; j < len; j++) {
       let p1 = points[i], p2 = points[j];
       if (p1[0] === p2[0] && p1[1] === p2[1]) {
         same_points++;
         continue;
       }
-      if (!map.has(getSlope(p1, p2))) {
-        map.set(getSlope(p1, p2), 1);
-      } else {
-        map.set(getSlope(p1, p2), map.get(getSlope(p1, p2)) + 1);
-      }
-      max_points = Math.max(max_points, map.get(getSlope(p1, p2)));
+      map[getSlope(p1, p2)] = !(getSlope(p1, p2) in map)
+        ? 1
+        : map[getSlope(p1, p2)]+1
+      max_points = Math.max(max_points, map[getSlope(p1, p2)]);
     }
     result = Math.max(result, max_points + same_points);
   }
