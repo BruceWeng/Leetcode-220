@@ -35,7 +35,7 @@ var trap = function(height) {
       stack.push(i);
       i += 1;
     }
-    else {
+    if (stack.length !== 0 && height[i] > height[stack[stack.length - 1]]) {
       let lastIdx = stack.pop();
       if (stack.length !== 0) {
         // find the smaller height between the two sides
