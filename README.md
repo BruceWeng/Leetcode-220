@@ -20,6 +20,14 @@
 6. Recursion and memoization
 7. All path(backtracking)
 
+Short Core:
+1. Binary Search
+2. Quick Select
+3. DP, Search, Backtracking
+4. Graph(Add/Remove Vertex/Edge, DFS, BFS, hasCycle, shortestPath, topologicalSort)
+5. LRU, LFU cache
+6. Interval
+
 ## Solutions of top 100 liked and top frequently asked interview questions.
 | Group          |  #  | Category                | # | Questions                               | R       | I       |
 |:--------------:|:---:|:-----------------------:|:-:|---------------------------------------- |:-------:|:-------:|
